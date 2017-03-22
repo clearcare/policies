@@ -18,11 +18,11 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
 
 ## 4.2 Risk Management Policies
 
-1. It is the policy of Cloudticity to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of the Cloudticity's information security program.
+1. It is the policy of Cloudticity to conduct thorough and timely risk assessments of the potential threats and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information (ePHI) (and other confidential and proprietary electronic information) it stores, transmits, and/or processes for its customers and to develop strategies to efficiently and effectively mitigate the risks identified in the assessment process as an integral part of Cloudticity's information security program.
 2. Risk analysis and risk management are recognized as important components of Cloudticity's corporate compliance program and information security program in accordance with the Risk Analysis and Risk Management implementation specifications within the Security Management standard and the evaluation standards set forth in the HIPAA Security Rule, 45 CFR 164.308(a)(1)(ii)(A), 164.308(a)(1)(ii)(B), 164.308(a)(1)(i), and 164.308(a)(8).
    1. Risk assessments are done throughout product life cycles:
    2. Before the integration of new system technologies and before changes are made to Cloudticity physical safeguards; and
-      * These changes do not include routine updates to existing systems, deployments of new systems created based on previously configured systems, deployments of new customers, or new code developed for operations and management of the Cloudticity Managed Services Platform.
+      * These changes do not include routine updates to existing systems, deployments of new systems created based on previously configured systems, deployments of new customers, or new code developed for operations and management of the Cloudticity Oxygen Managed Services Platform.
    3. While making changes to Cloudticity physical equipment and facilities that introduce new, untested configurations.
    4. Cloudticity performs periodic technical and non-technical assessments of the security rule requirements as well as in response to environmental or operational changes affecting the security of ePHI.
 3. Cloudticity implements security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to:
@@ -35,12 +35,12 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
 6. The implementation, execution, and maintenance of the information security risk analysis and risk management process is the responsibility of Cloudticity's Security Officer (or other designated employee), and the identified Risk Management Team.
 7. All risk management efforts, including decisions made on what controls to put in place as well as those to not put into place, are documented and the documentation is maintained for six years.
 8. The details of the Risk Management Process, including risk assessment, discovery, and mitigation, are outlined in detail below. The process is tracked, measured, and monitored using the following procedures:
-  1. The Security Officer or the Privacy Officer initiates the Risk Management Procedures by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
+  1. The Security Officer or the Privacy Officer initiates the Risk Management Procedures by creating a task in the Teamwork project: Compliance Review Activity (CRA).
   2. The Security Officer or the Privacy Officer is assigned to carry out the Risk Management Procedures.
-  3. All findings are documented in approved spreadsheet that is linked to the Issue.
-  4. Once the Risk Management Procedures are complete, along with corresponding documentation, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
-  5. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.
-9. The Risk Management Procedure is monitored on a quarterly basis using Zendesk reporting to assess compliance with above policy.
+  3. All findings are documented in an approved spreadsheet that is linked to the task.
+  4. Once the Risk Management Procedures are complete, along with corresponding documentation, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
+  5. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required.
+9. The Risk Management Procedure is monitored on a quarterly basis using Teamwork reporting to assess compliance with above policy.
 
 ## 4.3 Risk Management Procedures
 
@@ -49,8 +49,8 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
 The intent of completing a risk assessment is to determine potential threats and vulnerabilities and the likelihood and impact should they occur. The output of this process helps to identify appropriate controls for reducing or eliminating risk.
 
 * Step 1. System Characterization
-  * The first step in assessing risk is to define the scope of the effort. To do this, identify where ePHI is received, maintained, processed, or transmitted. Using information-gathering techniques, the Cloudticity Managed Services Platform boundaries are identified.
-  * Output - Characterization of the Cloudticity Managed Services Platform system assessed, a good picture of the Platform environment, and delineation of Platform boundaries.
+  * The first step in assessing risk is to define the scope of the effort. To do this, identify where ePHI is received, maintained, processed, or transmitted. Using information-gathering techniques, the Cloudticity Oxygen Managed Services Platform boundaries are identified.
+  * Output - Characterization of the Cloudticity Oxygen Managed Services Platform system assessed, a good picture of the Platform environment, and delineation of Platform boundaries.
 
 * Step 2. Threat Identification
   * Potential threats (the potential for threat-sources to successfully exercise a particular vulnerability) are identified and documented. All potential threat-sources through the review of historical incidents and data from intelligence agencies, the government, etc., to help generate a list of potential threats.
@@ -86,7 +86,7 @@ The intent of completing a risk assessment is to determine potential threats and
 
 ### 4.3.2 Risk Mitigation
 
-Risk mitigation involves prioritizing, evaluating, and implementing the appropriate risk-reducing controls recommended from the Risk Assessment process to ensure the confidentiality, integrity and availability of Cloudticity Managed Services Platform ePHI. Determination of appropriate controls to reduce risk is dependent upon the risk tolerance of the organization consistent with its goals and mission.
+Risk mitigation involves prioritizing, evaluating, and implementing the appropriate risk-reducing controls recommended from the Risk Assessment process to ensure the confidentiality, integrity and availability of Cloudticity Oxygen Managed Services Platform ePHI. Determination of appropriate controls to reduce risk is dependent upon the risk tolerance of the organization consistent with its goals and mission.
 
 * Step 1. Prioritize Actions
   * Using results from Step 7 of the Risk Assessment, sort the threat and vulnerability pairs according to their risk-levels in descending order. This establishes a prioritized list of actions needing to be taken, with the pairs at the top of the list getting/requiring the most immediate attention and top priority in allocating resources
@@ -140,3 +140,4 @@ The two principle components of the risk management process - risk assessment an
 ## 4.4 Process Documentation
 
 Maintain documentation of all risk assessment, risk management, and risk mitigation efforts for a minimum of six years.
+<!--se_discussion_list:{"HI4qNfMh8BlhEO1h4wv0dO4y":{"selectionStart":4251,"selectionEnd":4416,"commentList":[{"author":"Thomas Zinn","content":"Need a Risk Management Procedure teamwork task list."}],"discussionIndex":"HI4qNfMh8BlhEO1h4wv0dO4y"}}-->

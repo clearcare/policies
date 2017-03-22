@@ -8,8 +8,9 @@ Cloudticity has a Security Officer [164.308(a)(2)] and Privacy Officer [164.308(
 
 * 02.f - Disciplinary Process
 * 06.d - Data Protection and Privacy of Covered Information
-* 06.f - Prevention of Misuse of Information Assets
+* 06.e - Prevention of Misuse of Information Assets
 * 06.g - Compliance with Security Policies and Standards
+* 01.t - Session Time-out
 
 ### 5.1.2 Applicable Standards from the HIPAA Security Rule
 
@@ -25,7 +26,7 @@ The Privacy Officer is responsible for assisting with compliance and security tr
 3. Manage relationships with customers and partners as those relationships affect security and compliance of ePHI.
 4. Assist Security Officer as needed.
 
-The current Cloudticity Privacy Officer is Travis Good ([travis@cloudticity.com](mailto:travis@cloudticity.com)).
+The current Cloudticity Privacy Officer is <Privacy Officer> ([<first name>@cloudticity.com](mailto:<first name>@cloudticity.com)).
 
 ### 5.2.1 Workforce Training Responsibilities
 
@@ -64,7 +65,7 @@ The current Cloudticity Privacy Officer is Travis Good ([travis@cloudticity.com]
 
 The Security Officer is responsible for facilitating the training and supervision of all workforce members [164.308(a)(3)(ii)(A) and 164.308(a)(5)(ii)(A)], investigation and sanctioning of any workforce member that is in violation of Cloudticity security policies and non-compliance with the security regulations [164.308(a)(1)(ii)&lpar;c&rpar;], and writing, implementing, and maintaining all polices, procedures, and documentation related to efforts toward security and compliance [164.316(a-b)].
 
-The current Cloudticity Security Officer is Adam Leko ([adam@cloudticity.com](mailto:adam@cloudticity.com)).
+The current Cloudticity Security Officer is Gerry Miller ([gerry@cloudticity.com](mailto:gerry@cloudticity.com)).
 
 ### 5.3.1 Organizational Responsibilities
 

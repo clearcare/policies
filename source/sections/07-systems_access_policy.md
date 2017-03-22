@@ -1,4 +1,4 @@
-# 7. System Access Policy
+# 7. Systems Access Policy
 
 Access to Cloudticity systems and application is limited for all users, including but not limited to workforce members, volunteers, business associates, contracted providers, consultants, and any other entity, is allowable only on a minimum necessary basis. All users are responsible for reporting an incident of unauthorized user or access of the organization's information systems. These safeguards have been established to address the HIPAA Security regulations including the following:
 
@@ -17,6 +17,9 @@ Access to Cloudticity systems and application is limited for all users, includin
 * 01.v - Information Access Restriction
 * 02.i - Removal of Access Rights
 * 06.e - Prevention of Misuse of Information Assets
+* 01.t - Session Time-out
+* 09.s - Information Exchange Policies and Procedures
+* 10.f - Policy on the Use of Cryptographic Controls
 
 ### 7.1.2 Applicable Standards from the HIPAA Security Rule
 
@@ -33,14 +36,14 @@ Access to Cloudticity systems and application is limited for all users, includin
 
 ## 7.2 Access Establishment and Modification
 
-1. Requests for access to Cloudticity Managed Services Platform systems and applications is made formally using the following process:
-  1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
+1. Requests for access to Cloudticity Oxygen Managed Services Platform systems and applications is made formally using the following process:
+  1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork project: Compliance Review Activity (CRA).
      * User identities must be verified prior to granting access to new accounts.
      * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
-     * For new accounts, the method used to verify the user's identity must be recorded on the Issue.
+     * For new accounts, the method used to verify the user's identity must be recorded on the task.
   2. The Security Officer will grant access to systems as dictated by the employee's job title. If additional access is required outside of the minimum necessary to perform job functions, the requester must include a description of why the additional access is required as part of the access request.
-  3. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
-  4. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required. The Security Officer then grants requested access.
+  3. Once the review is completed, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
+  4. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required. The Security Officer then grants requested access.
      * New accounts will be created with a temporary secure password that meets all requirements from [§7.12](#7.12-password-management), which must be changed on the initial login.
      * All password exchanges must occur over an authenticated channel.
      * For production systems, access grants are accomplished by adding the appropriate user account to the corresponding LDAP group.
@@ -48,12 +51,12 @@ Access to Cloudticity systems and application is limited for all users, includin
 2. Access is not granted until receipt, review, and approval by the Cloudticity Security Officer;
 3. The request for access is retained for future reference.
 4. All access to Cloudticity systems and services are reviewed and updated on an bi-annual basis to assure proper authorizations are in place commensurate with job functions. The process for conducting reviews is outlined below:
-   1. The Security Officer initiates the review of user access by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
+   1. The Security Officer initiates the review of user access by creating a task in the Teamwork project: Compliance Review Activity (CRA).
    2. The Security Officer, or a Privacy Officer, is assigned to review levels of access for each Cloudticity workforce member.
-   3. If user access is are found during review that is not in line with the least privilege principle, the process below is used to modify user access and notify the user of access changes. Once those steps are completed, the Issue is then reviewed again.
-   4. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
-   5. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.
-   6. Review of user access is monitored on a quarterly basis using Zendesk reporting to assess compliance with above policy.
+   3. If user access is found during review that is not in line with the least privilege principle, the process below is used to modify user access and notify the user of access changes. Once those steps are completed, the access is then reviewed again.
+   4. Once the review is completed, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
+   5. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required.
+   6. Review of user access is monitored on a quarterly basis using Teamwork reporting to assess compliance with above policy.
 5. Any Cloudticity workforce member can request change of access using the process outlined in [§7.2 paragraph 1](#7.2-access-establishment-and-modification).
 6. Access to production systems is controlled using centralized user management and authentication.
 7. Temporary accounts are not used unless absolutely necessary for business purposes.
@@ -94,7 +97,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 
 ## 7.6 Unique User Identification
 
-1. Access to the Cloudticity Managed Services Platform systems and applications is controlled by requiring unique User Login IDs and passwords for each individual user and developer.
+1. Access to the Cloudticity Oxygen Managed Services Platform systems and applications is controlled by requiring unique User Login IDs and passwords for each individual user and developer.
 2. Passwords requirements mandate strong password controls (see below).
 3. Passwords are not displayed at any time and are not transmitted or stored in plain text.
 4. Default accounts on all production systems, including root, are disabled.
@@ -125,7 +128,7 @@ All workstations at Cloudticity are company owned, and all are laptop Apple prod
 
 1. Cloudticity production systems are not accessible directly over wireless channels.
 2. Wireless access is disabled on all production systems.
-3. When access production systems via remote wireless connections, the same system access policies and procedures apply to wireless as all other connections, including wired.
+3. When accessing production systems via remote wireless connections, the same system access policies and procedures apply to wireless as all other connections, including wired.
 4. Wireless networks managed within Cloudticity non-production facilities (offices, etc) are secured with the following configurations:
    * All data in transit over wireless is encrypted using WPA2 encryption;
    * Passwords are rotated on a regular basis, presently quarterly. This process is managed by the Cloudticity Security Officer.
@@ -180,7 +183,7 @@ The password-reset email inbox is used to track and store password reset request
    * All production access to systems is performed through a bastion/jump host accessed through a VPN. Direct access to production systems is disallowed by Cloudticity's VPN configuration.
    * On production Linux bastions, all file transfer services are disabled including file-transfer functionality of SSH services (SCP/SFTP).
    * On production Windows bastions, local drive mappings are disabled by Group Policy settings.
-   * Configuration settings for enforcing these technical controls are managed by Cloudticity's configuration management tooling, Chef/Salt.
+   * Configuration settings for enforcing these technical controls are managed by Cloudticity's configuration management tooling, Chef/userdata.
 
 ## 7.14 PaaS customer Access to Systems
 
