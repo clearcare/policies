@@ -6,19 +6,19 @@ Cloudticity provides secure and compliant cloud-based software. This hosted soft
 
 ## 1.1 Platform as a Service (PaaS)
 
-PaaS customers utilize hosted software and infrastructure from Cloudticity to deploy, host, and scale custom developed applications and configured databases. These customers are deployed into compliant containers run on systems secured and managed by Cloudticity. Cloudticity does not have insight or access into application level data of PaaS customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. Cloudticity makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, OSSEC throughout the platform, etc).
+PaaS customers utilize hosted software and infrastructure from Cloudticity to deploy, host, and scale custom developed applications and configured databases. These customers are deployed onto compliant resources run on systems secured and managed by Cloudticity. Cloudticity does not have insight or access into application level data of PaaS customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. Cloudticity makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, OSSEC throughout the platform, etc).
 
 PaaS customers can opt for a list of services from Cloudticity, which include Backup Service, Logging Service, IDS/IPS Service, and Disaster Recovery Service. Some of these services are not standard and PaaS customers must sign up for them in order for Cloudticity to manage these areas of security and compliance.
 
 ## 1.2 Platform Add-ons
 
-Add-ons are compliant API-driven services that are offered as part of the Cloudticity Managed Services Platform. These services currently include our Backend as a Service and secure Messaging Service. With Add-ons, Cloudticity has access to data models and manages all application level configurations and security.
+Add-ons are compliant services that are offered as part of the Cloudticity Oxygen Platform. These services currently include Monitoring as a Service (MaaS) and Security as a Service (SaaS). With Add-ons, Cloudticity has access to data models and manages all application level configurations and security.
 
 In the future there may be 3rd party Add-on services available as part of the Cloudticity Managed Services Platform. These 3rd party, or Partner, Services will be fully reviewed by Cloudticity to assure they do not have a negative impact on Cloudticity's information security and compliance posture.
 
 ## 1.3 Compliance Inheritance
 
-Cloudticity provides compliant hosted software infrastructure for its customers. Cloudticity has been through a HIPAA compliance audit by a national, 3rd party compliance firm, to validate and map organizational policies and technical settings to HIPAA rules. Cloudticity, as a company, and its technology, is working on HITRUST Certification. Cloudticity's infrastructure at AWS is HITRUST Certified.
+Cloudticity provides compliant hosted software infrastructure for its customers. Cloudticity is going through a HIPAA compliance audit by a national, 3rd party compliance firm, to validate and map organizational policies and technical settings to HIPAA rules. Cloudticity's infrastructure at AWS is HITRUST Certified.
 
 Cloudticity signs business associate agreements (BAAs) with its customers. These BAAs outline Cloudticity obligations and customer obligations, as well as liability in the case of a breach. In providing infrastructure and managing security configurations that are a part of the technology requirements that exist in HIPAA and HITRUST, as well as future compliance frameworks, Cloudticity manages various aspects of compliance for customers. The aspects of compliance that Cloudticity manages for customers are inherited by customers, and Cloudticity assumes the risk associated with those aspects of compliance. In doing so, Cloudticity helps customers achieve and maintain compliance, as well as mitigates customers risk.
 
@@ -30,9 +30,9 @@ Mappings of HIPAA Rules to Cloudticity controls and a mapping of what Rules are 
 
 ## 1.4 Cloudticity Organizational Concepts
 
-The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of Cisco firewalls; nginx web servers; Java, Python, and Go application servers; Percona and PostgreSQL database servers; Logstash logging servers; Linux Ubuntu monitoring servers; Windows Server virtual machines; Chef and Salt configuration management servers; OSSEC IDS services; Docker containers; and developer tool servers running on Linux Ubuntu.
+The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of OpenVPN firewalls, Wordpress web servers, SQL Server database servers, Chef configuration management servers, Trend Micro IDS/IPS services, and developer tool servers running on Linux and Windows Server virtual machines.
 
-Within the Cloudticity Managed Services Platform on AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting Docker containers, databases, APIs, log servers, etc. Cloudticity assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
+Within the Cloudticity Managed Services Platform on AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting databases, APIs, log servers, etc. Cloudticity assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
 
 In the case of PaaS customers, it is the responsibility of the customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of Cloudticity.
 
@@ -42,7 +42,7 @@ The data and network segmentation mechanism differs depending on the primitives 
 
 The result of segmentation strategies employed by Cloudticity effectively create RFC 1918, or dedicated, private segmented and separated networks and IP spaces, for each PaaS customer and for Platform Add-ons.
 
-Additionally, IPtables is used on each each server for logical segmentation. IPtables is configured to restrict access to only justified ports and protocols. Cloudticity has implemented strict logical access controls so that only authorized personnel are given access to the internal management servers. The environment is configured so that data is transmitted from the load balancers to the application servers over an SSL encrypted session.
+Additionally, IPtables is used on each server for logical segmentation. IPtables is configured to restrict access to only justified ports and protocols. Cloudticity has implemented strict logical access controls so that only authorized personnel are given access to the internal management servers. The environment is configured so that data is transmitted from the load balancers to the application servers over an SSL encrypted session.
 
 In the case of Platform Add-ons, once the data is received from the application server, a series of Application Programming Interface (API) calls is made to the database servers where the ePHI resides. The ePHI is separated into PostgreSQL and Percona databases through programming logic built, so that access to one database server will not present you with the full ePHI spectrum.
 
@@ -56,7 +56,7 @@ Cloudticity, at its sole discretion, shares audit reports, including its HITRUST
 
 The following process is used to request audit reports:
 
-1. Email is sent to compliance-reports@cloudticity.com. In the email, please specify the type of report being requested and any required timelines for the report.
+1. Email is sent to support@cloudticity.com. In the email, please specify the type of report being requested and any required timelines for the report.
 2. Cloudticity staff will log a task with the details of the request into the Cloudticity Compliance Review Activities Project on Zendesk. Zendesk is used to track requests status and outcomes.
 3. Cloudticity will confirm if a current NDA is in place with the party requesting the audit report. If there is no NDA in place, Cloudticity will send one for execution.
 4. Once it has been confirmed that an NDA is executed, Cloudticity staff will move the Zendesk Issue to "Under Review".
