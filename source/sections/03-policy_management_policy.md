@@ -18,7 +18,7 @@ Cloudticity implements policies and procedures to maintain compliance and integr
 1. All policies are stored and up to date to maintain Cloudticity compliance with HIPAA, HITRUST, NIST, and other relevant standards. Updates and version control are done similar to source code control.
 2. Policy update requests can be made by any workforce member at any time. Furthermore, all policies are reviewed annually by both the Security and Privacy Officer to assure they are accurate and up-to-date.
 3. Cloudticity employees may request changes to policies using the following process:
-  1. The Cloudticity employee initiates a policy change request by creating an Issue in the Zendesk Compliance Review Activity (CRA) project. The change request may optionally include a GitHub pull request from a separate branch or repository containing the desired changes.
+  1. The Cloudticity employee initiates a policy change request by creating a task in the Teamwork Compliance Review Activity (CRA) project. The change request may optionally include a GitHub pull request from a separate branch or repository containing the desired changes.
   2. The Security Officer or the Privacy Officer is assigned to review the policy change request.
   3. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
   4. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.
@@ -30,14 +30,14 @@ Cloudticity implements policies and procedures to maintain compliance and integr
    1. Version history of all Cloudticity policies is done via GitHub.
    2. Backup storage of all policies is done with Box.
 6. The policies and information security policies are reviewed and audited annually, or after significant changes occur to Cloudticity's organizational environment. Issues that come up as part of this process are reviewed by Cloudticity management to assure all risks and potential gaps are mitigated and/or fully addressed. The process for reviewing polices is outlined below:
-  1. The Security Officer initiates the policy review by creating an Issue in the Zendesk Compliance Review Activity (CRA) project.
+  1. The Security Officer initiates the policy review by creating a task in the Teamwork Compliance Review Activity (CRA) project.
   2. The Security Officer or the Privacy Officer is assigned to review the current Cloudticity policies ([https://policy.cloudticity.com/](https://policy.cloudticity.com/)).
   3. If changes are made, the above process is used. All changes are documented in the Issue.
   4. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
   5. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.
   6. Policy review is monitored on a quarterly basis using Zendesk reporting to assess compliance with above policy.
 7. Cloudticity utilizes the HITRUST MyCSF framework to track compliance with the HITRUST CSF on an annual basis. Cloudticity also tracks compliance with HIPAA and publishes results at [https://hipaa.cloudticity.com](https://hipaa.cloudticity.com). In order to track and measure adherence on an annual basis, Cloudticity uses the following process to track HITRUST audits, both full and interim:
-  1. The Security Officer initiates the HITRUST audit activity by creating an Issue in the Zendesk Compliance Review Activity (CRA) project.
+  1. The Security Officer initiates the HITRUST audit activity by creating a task in the Teamwork Compliance Review Activity (CRA) project.
   2. The Security Officer or the Privacy Officer is assigned to own and manage the HITRUST activity.
   3. Once the HITRUST activity is completed, the Security Officer approves or rejects the Issue.
   5. If the review is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.

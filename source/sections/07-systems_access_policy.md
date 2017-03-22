@@ -34,7 +34,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 ## 7.2 Access Establishment and Modification
 
 1. Requests for access to Cloudticity Managed Services Platform systems and applications is made formally using the following process:
-  1. The Cloudticity workforce member, or their manager, initiates the access request by creating an Issue in the Zendesk Compliance Review Activity (CRA) Project.
+  1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
      * User identities must be verified prior to granting access to new accounts.
      * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
      * For new accounts, the method used to verify the user's identity must be recorded on the Issue.
@@ -48,7 +48,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 2. Access is not granted until receipt, review, and approval by the Cloudticity Security Officer;
 3. The request for access is retained for future reference.
 4. All access to Cloudticity systems and services are reviewed and updated on an bi-annual basis to assure proper authorizations are in place commensurate with job functions. The process for conducting reviews is outlined below:
-   1. The Security Officer initiates the review of user access by creating an Issue in the Zendesk Compliance Review Activity (CRA) Project.
+   1. The Security Officer initiates the review of user access by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
    2. The Security Officer, or a Privacy Officer, is assigned to review levels of access for each Cloudticity workforce member.
    3. If user access is are found during review that is not in line with the least privilege principle, the process below is used to modify user access and notify the user of access changes. Once those steps are completed, the Issue is then reviewed again.
    4. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.
@@ -59,7 +59,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 7. Temporary accounts are not used unless absolutely necessary for business purposes.
    * Accounts are reviewed every 90 days to assure temporary accounts are not left unnecessarily.
    * Accounts that are inactive for over 90 days are removed.
-8. In the case of non-personal information, such as generic educational content, identification and authentication may not be required. This is the responsibility of Cloudticity Customers to define, and not Cloudticity.
+8. In the case of non-personal information, such as generic educational content, identification and authentication may not be required. This is the responsibility of Cloudticity customers to define, and not Cloudticity.
 9. Privileged users must first access systems using standard, unique user accounts before switching to privileged users and performing privileged tasks.
    * For production systems, this is enforced by creating non-privileged user accounts that must invoke `sudo` to perform privileged tasks.
    * Rights for privileged accounts are granted by the Security Officer using the process outlined in [§7.2 paragraph 1](#7.2-access-establishment-and-modification).
@@ -76,7 +76,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 
 1. The level of security assigned to a user to the organization's information systems is based on the minimum necessary amount of data access required to carry out legitimate job responsibilities assigned to a user's job classification and/or to a user needing access to carry out treatment, payment, or healthcare operations.
 2. All access requests are treated on a "least-access principle."
-3. Cloudticity maintains a minimum necessary approach to access to Customer data. As such, Cloudticity, including all workforce members, does not readily have access to any ePHI.
+3. Cloudticity maintains a minimum necessary approach to access to customer data. As such, Cloudticity, including all workforce members, does not readily have access to any ePHI.
 
 ## 7.4 Access Authorization
 
@@ -86,8 +86,8 @@ Access to Cloudticity systems and application is limited for all users, includin
 ## 7.5 Person or Entity Authentication
 
 1. Each workforce member has and uses a unique user ID and password that identifies him/her as the user of the information system.
-2. Each Customer and Partner has and uses a unique user ID and password that identifies him/her as the user of the information system.
-3. All Customer support desk interactions must be verified before Cloudticity support personnel will satisfy any request having information security implications.
+2. Each customer and Partner has and uses a unique user ID and password that identifies him/her as the user of the information system.
+3. All customer support desk interactions must be verified before Cloudticity support personnel will satisfy any request having information security implications.
    * Cloudticity's current support desk software, Zendesk, requires users to authenticate before submitting support tickets.
    * Support issues submitted via Cloudticity's dashboard require that users authenticate with their Cloudticity account before submitting support tickets.
    * Support issues submitted by email must be verified by Cloudticity personnel using a phone number that has been registered with the corresponding account.
@@ -182,9 +182,9 @@ The password-reset email inbox is used to track and store password reset request
    * On production Windows bastions, local drive mappings are disabled by Group Policy settings.
    * Configuration settings for enforcing these technical controls are managed by Cloudticity's configuration management tooling, Chef/Salt.
 
-## 7.14 PaaS Customer Access to Systems
+## 7.14 PaaS customer Access to Systems
 
-Cloudticity grants PaaS customer secure system access via VPN connections. This access is only to Customer-specific systems, no other systems in the environment. These connections are setup at customer deployment. These connections are secured and encrypted and the only method for customers to connect to Cloudticity hosted systems.
+Cloudticity grants PaaS customer secure system access via VPN connections. This access is only to customer-specific systems, no other systems in the environment. These connections are setup at customer deployment. These connections are secured and encrypted and the only method for customers to connect to Cloudticity hosted systems.
 
 In the case of data migration, Cloudticity does, on a case by case basis, support customers in importing data. In these cases Cloudticity requires that all data is secured and encrypted in transit, such as by using SFTP or SCP for transferring files.
 

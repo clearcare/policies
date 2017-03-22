@@ -1,6 +1,6 @@
 # 15. IDS Policy
 
-In order to preserve the integrity of data that Cloudticity stores, processes, or transmits for Customers, Cloudticity implements strong intrusion detection tools and policies to proactively track and retroactively investigate unauthorized access. Cloudticity currently utilizes [OSSEC](http://www.ossec.net/) to track file system integrity, monitor log data, and detect rootkit access.
+In order to preserve the integrity of data that Cloudticity stores, processes, or transmits for customers, Cloudticity implements strong intrusion detection tools and policies to proactively track and retroactively investigate unauthorized access. Cloudticity currently utilizes [OSSEC](http://www.ossec.net/) to track file system integrity, monitor log data, and detect rootkit access.
 
 ## 15.1 Applicable Standards
 

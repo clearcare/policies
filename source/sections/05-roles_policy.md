@@ -47,7 +47,7 @@ The current Cloudticity Privacy Officer is Travis Good ([travis@cloudticity.com]
    9. Users are required to report unauthorized attempts, uses of, and theft of Cloudticity's systems and/or workstations;
    10. Users are required to report unauthorized access to facilities
    11. Users are required to report noted log-in discrepancies (i.e. application states users last log-in was on a date user was on vacation);
-   12. Users may not alter ePHI maintained in a database, unless authorized to do so by a Cloudticity Customer;
+   12. Users may not alter ePHI maintained in a database, unless authorized to do so by a Cloudticity customer;
    13. Users are required to understand their role in Cloudticity's contingency plan;
    14. Users may not share their user names nor passwords with anyone;
    15. Requirements for users to create and change passwords;
