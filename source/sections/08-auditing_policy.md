@@ -24,6 +24,7 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
 * 09.ac Protection of Log Information
 * 09.ab - Monitoring System Use
 * 06.e - Prevention of Misuse of Information
+* 09.c - Segregation of Duties
 
 ### 8.1.2 Applicable Standards from the HIPAA Security Rule
 
@@ -44,15 +45,15 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
 2. Cloudticity's auditing processes shall address access and activity at the following levels listed below. In the case of PaaS customers, Application and User level auditing is the responsibility of the customer; Cloudticity provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
    * User: User level audit trails generally monitor and log all commands directly initiated by the user, all identification and authentication attempts, and data and services accessed.
    * Application: Application level audit trails generally monitor and log all user activities, including data accessed and modified and specific actions.
-   * System: System level audit trails generally monitor and log user activities, applications accessed, and other system defined specific actions. Cloudticity utilizes file system monitoring from OSSEC to assure the integrity of file system data.
+   * System: System level audit trails generally monitor and log user activities, applications accessed, and other system defined specific actions. Cloudticity utilizes file system monitoring from TMDS to assure the integrity of file system data.
    * Network: Network level audit trails generally monitor information on what is operating, penetrations, and vulnerabilities.
 3. Cloudticity shall log all incoming and outgoing traffic to into and out of its environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to Cloudticity.
-4. Cloudticity utilizes OSSEC to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems.
+4. Cloudticity utilizes TMDS to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems.
 5. Cloudticity leverages process monitoring tools throughout its environment.
 6. Cloudticity treats its Dashboard as a Platform Add-on and, as such, it logs all activity associated with Dashboard Access.
-7. Cloudticity uses OSSEC to monitor the integrity of log files by utilizing OSSEC System Integrity Checking capabilities.
-8. Cloudticity shall identify "trigger events" or criteria that raise awareness of questionable conditions of viewing of confidential information. The "events" may be applied to the entire Cloudticity Managed Services Platform or may be specific to a customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
-9. In addition to trigger events, Cloudticity utilizes OSSEC log correlation functionality to proactively identify and enable alerts based on log data.
+7. Cloudticity uses TMDS to monitor the integrity of log files by utilizing TMDS Integrity Checking capabilities.
+8. Cloudticity shall identify "trigger events" or criteria that raise awareness of questionable conditions of viewing of confidential information. The "events" may be applied to the entire Cloudticity Oxygen Managed Services Platform or may be specific to a customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
+9. In addition to trigger events, Cloudticity utilizes TMDS log correlation functionality to proactively identify and enable alerts based on log data.
 10. Logs are reviewed weekly by the Security Officer.
 11. Cloudticity's Security Officer and Privacy Officer are authorized to select and use auditing tools that are designed to detect network vulnerabilities and intrusions. Such tools are explicitly prohibited by others, including customers and Partners, without the explicit authorization of the Security Officer. These tools may include, but are not limited to:
     * Scanning tools and devices;
@@ -81,18 +82,18 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
 ## 8.4 Review and Reporting of Audit Findings
 
 1. Audit information that is routinely gathered must be reviewed in a timely manner, currently monthly, by the responsible workforce member(s). On a quarterly basis, logs are reviewed to assure the proper data is being captured and retained. The following process details how log reviews are done at Cloudticity:
-  1. The Security Officer initiates the log review by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
+  1. The Security Officer initiates the log review by creating a task in the Teamwork project: Compliance Review Activity (CRA).
   2. The Security Officer, or a Cloudticity Security Engineer assigned by the Security Officer, is assigned to review the logs.
-  3. Relevant audit log findings are added to the Issue; these findings are investigated in a later step. Once those steps are completed, the Issue is then reviewed again.
-  4. Once the review is completed, the Security Officer approves or rejects the Issue. Relevant findings are reviewed a this stage. If the Issue is rejected, it goes back for further review and documentation. The communications protocol around specific findings are outlined below.
-  5. If the Issue is approved, the Security Officer then marks the Issue as Done, adding any pertinent notes required.
+  3. Relevant audit log findings are added to the task; these findings are investigated in a later step. Once those steps are completed, the task is then reviewed again.
+  4. Once the review is completed, the Security Officer approves or rejects the task. Relevant findings are reviewed a this stage. If the task is rejected, it goes back for further review and documentation. The communications protocol around specific findings are outlined below.
+  5. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required.
 2. The reporting process shall allow for meaningful communication of the audit findings to those workforce members, customers, or Partners requesting the audit.
    * Significant findings shall be reported immediately in a written format. Cloudticity's security incident response form may be utilized to report a single event.
    * Routine findings shall be reported to the sponsoring leadership structure in a written report format.
 3. Reports of audit results shall be limited to internal use on a minimum necessary/need-to-know basis. Audit results shall not be disclosed externally without administrative and/or legal counsel approval.
 4. Security audits constitute an internal, confidential monitoring practice that may be included in Cloudticity's performance improvement activities and reporting. Care shall be taken to ensure that the results of the audits are disclosed to administrative level oversight structures only and that information which may further expose organizational risk is shared with extreme caution. Generic security audit information may be included in organizational reports (individually-identifiable e PHI shall not be included in the reports).
 5. Whenever indicated through evaluation and reporting, appropriate corrective actions must be undertaken. These actions shall be documented and shared with the responsible workforce members, customers, and/or Partners.
-6. Log review activity is monitored on a quarterly basis using Zendesk reporting to assess compliance with above policy.
+6. Log review activity is monitored on a quarterly basis using Teamwork reporting to assess compliance with above policy.
 
 ## 8.5 Auditing customer and Partner Activity
 

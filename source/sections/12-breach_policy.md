@@ -52,7 +52,7 @@ In the case of a breach, Cloudticity shall notify all affected customers. It is 
 12. Sanctions: The organization shall have in place and apply appropriate sanctions against members of its workforce, customers, and Partners who fail to comply with privacy policies and procedures.
 13. Retaliation/Waiver: Cloudticity may not intimidate, threaten, coerce, discriminate against, or take other retaliatory action against any individual for the exercise by the individual of any privacy right. The organization may not require individuals to waive their privacy rights under as a condition of the provision of treatment, payment, enrollment in a health plan, or eligibility for benefits.
 
-## 12.3 Cloudticity Managed Services Platform customer Responsibilities
+## 12.3 Cloudticity Oxygen Managed Services Platform customer Responsibilities
 
 1. The Cloudticity customer that accesses, maintains, retains, modifies, records, stores, destroys, or otherwise holds, uses, or discloses unsecured ePHI shall, without unreasonable delay and in no case later than 60 calendar days after discovery of a breach, notify Cloudticity of such breach. The customer shall provide Cloudticity with the following information:
    * A description of what happened, including the date of the breach, the date of the discovery of the breach, and the number of records and customers affected, if known.
@@ -93,7 +93,7 @@ We will assist you in remedying the situation.
 Sincerely,
 
 
-Travis Good, MD  
-Co-founder - Cloudticity, LLC.  
-travis@cloudticity.com  
-303-351-2640
+Gerry Miller
+Founder & CTO - Cloudticity, LLC.  
+gerry@cloudticity.com  
+248-819-0443

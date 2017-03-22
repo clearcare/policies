@@ -140,7 +140,7 @@ The Follow-up Phase represents the review of the security incident to look for "
 
 ### 11.2.6 Periodic Evaluation
 
-It is important to note that the processes surrounding security incident response should be periodically reviewed and evaluated for effectiveness. This also involves appropriate training of resources expected to respond to security incidents, as well as the training of the general population regarding the Cloudticity's expectation for them, relative to security responsibilities. The incident response plan is tested annually.
+It is important to note that the processes surrounding security incident response should be periodically reviewed and evaluated for effectiveness. This also involves appropriate training of resources expected to respond to security incidents, as well as the training of the general population regarding Cloudticity's expectation for them, relative to security responsibilities. The incident response plan is tested annually.
 
 ## 11.3 Security Incident Response Team (SIRT)
 

@@ -9,6 +9,7 @@ Production systems that create, receive, store, or transmit customer data (herea
 ### 17.1.1 Applicable Standards from the HITRUST Common Security Framework
 
 * 10.b - Input Data Validation
+* 10.g - Key Management
 
 ### 17.1.2 Applicable Standards from the HIPAA Security Rule
 
@@ -24,7 +25,7 @@ Production systems that create, receive, store, or transmit customer data (herea
 
 ## 17.4 Prevention of Malware on Production Systems
 
-1. All Production Systems must have OSSEC running at set to scan system every 2 hours and at reboot to assure not malware is present. Detected malware is evaluated and removed.
+1. All Production Systems must have TMDS running at set to scan system every 2 hours and at reboot to assure not malware is present. Detected malware is evaluated and removed.
 2. Virus scanning software is run on all Production Systems for anti-virus protection.
    * Hosts are scanned daily for malicious binaries in critical system paths.
    * The malware signature database is checked hourly and automatically updated if new signatures are available.
@@ -39,7 +40,7 @@ Production systems that create, receive, store, or transmit customer data (herea
 
 ## 17.6 Intrusion Detection and Vulnerability Scanning
 
-1. Production systems are monitored using IDS systems. Suspicious activity is logged and alerts are generated.
+1. Production systems are monitored using IPS/IDS systems. Suspicious activity is logged and alerts are generated.
 2. Vulnerability scanning of Production Systems must occur on a predetermined, regular basis, no less than annually. Currently it is weekly. Scans are reviewed by Security Officer, with defined steps for risk mitigation, and retained for future reference.
 
 ## 17.7 Production System Security

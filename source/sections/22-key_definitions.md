@@ -36,7 +36,7 @@
 
 * *Disclosure*: Disclosure means the release, transfer, provision of, access to, or divulging in any other manner of information outside the entity holding the information.
 
-* *Customers*: Contractually bound users of Cloudticity Managed Services Platform.
+* *Customers*: Contractually bound users of Cloudticity Oxygen Managed Services Platform.
 
 * *Electronic Protected Health Information (ePHI)*: Any individually identifiable health information protected by HIPAA that is transmitted by, processed in some way, or stored in electronic media.
 
@@ -58,8 +58,8 @@
   * The antivirus software alerts when it detects that a host is infected with a worm;
   * Users complain of slow access to hosts on the Internet;
   * The system administrator sees a filename with unusual characteristics;
-  * Automated alerts of activity from log monitors like OSSEC;
-  * An alert from OSSEC about file system integrity issues.
+  * Automated alerts of activity from log monitors like TMDS;
+  * An alert from TMDS about file system integrity issues.
 
 * *Intrusion Detection System (IDS)*: A software tool use to automatically detect and notify in the event of possible unauthorized network and/or system access.
 
@@ -77,7 +77,7 @@
 
 * *Organization*: For the purposes of this policy, the term "organization" shall mean Cloudticity.
 
-* *Partner*: Contractual bound 3rd party vendor with integration with the Cloudticity Managed Services Platform. May offer Add-on services.
+* *Partner*: Contractual bound 3rd party vendor with integration with the Cloudticity Oxygen Managed Services Platform. May offer Add-on services.
 
 * *Platform*: The overall technical environment of Cloudticity.
 
@@ -143,7 +143,7 @@
 
 * *Threat Action*: The method by which an attack might be carried out (e.g., hacking, system intrusion, etc.).
 
-* *Unrestricted Area*: Those areas of the building(s) where protected health information and/or sensitive organizational information is not stored or is not utilized or is not accessible there on a regular basis.
+* *Unrestricted Area*: Those areas of the building(s) where protected health information and/or sensitive organizational information is not stored or is not utilized or is not accessible on a regular basis.
 
 * *Unsecured Protected Health Information*: Protected health information (PHI) that is not rendered unusable, unreadable, or indecipherable to unauthorized individuals through the use of technology or methodology specified by the Secretary in the guidance issued under section 13402(h)(2) of Pub. L.111-5 on the HHS website.
   1. Electronic PHI has been encrypted as specified in the HIPAA Security rule by the use of an algorithmic process to transform data into a form in which there is a low probability of assigning meaning without the use of a confidential process or key and such confidential process or key that might enable decryption has not been breached. To avoid a breach of the confidential process or key, these decryption tools should be stored on a device or at a location separate from the data they are used to encrypt or decrypt. The following encryption processes meet this standard.

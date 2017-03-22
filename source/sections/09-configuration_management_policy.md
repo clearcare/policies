@@ -1,12 +1,13 @@
 # 9. Configuration Management Policy
 
-Cloudticity standardizes and automates configuration management through the use of Chef/Salt scripts as well as documentation of all changes to production systems and networks. Chef and Salt automatically configure all Cloudticity systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
+Cloudticity standardizes and automates configuration management through the use of Chef/userdata scripts as well as documentation of all changes to production systems and networks. Chef and userdata automatically configure all Cloudticity systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
 
 ## 9.1 Applicable Standards
 
 ### 9.1.1 Applicable Standards from the HITRUST Common Security Framework
 
 * 06 - Configuration Management
+* 09.af - Clock Synchronization
 
 ### 9.1.2 Applicable Standards from the HIPAA Security Rule
 
@@ -14,7 +15,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ## 9.2 Configuration Management Policies
 
-1. Chef and Salt are used to standardize and automate configuration management.
+1. Chef and userdata are used to standardize and automate configuration management.
 2. No systems are deployed into Cloudticity environments without approval of the Cloudticity CTO.
 3. All changes to production systems, network devices, and firewalls are approved by the Cloudticity CTO before they are implemented to assure they comply with business and security requirements.
 4. All changes to production systems are tested before they are implemented in production.
@@ -40,13 +41,13 @@ Cloudticity standardizes and automates configuration management through the use 
 1. Before provisioning any systems, ops team members must file a request in the Zendesk Deployment Ticket (DT) project.
    * Zendesk access requires authenticated users.
    * The CTO grants access to the Zendesk DT project following the procedures covered in the [Access Establishment and Modification section](#7.2-access-establishment-and-modification).
-2. The VP Engineering or CTO must approve the provisioning request before any new system can be provisioned.
+2. The VP of Engineering or CTO must approve the provisioning request before any new system can be provisioned.
 3. Once provisioning has been approved, the ops team member must configure the new system according to the standard baseline chosen for the system's role.
-   * For Linux systems, this means adding the appropriate grains to the Salt configuration file and running a `highstate` operation.
+   * For Linux systems, this means adding the appropriate changes to the userdata configuration file and running an `update` operation on product or resource.
    * For Windows systems, this means adding the appropriate roles to the system's Chef profile and forcing a Chef run.
 4. If the system will be used to house production data (ePHI), the ops team member must add an encrypted block data volume to the VM during provisioning.
    * For systems on AWS, the ops team member must add an encrypted Elastic Block Storage (EBS) volume.
-   * For systems on other cloud providers, the ops team member must add a block data volume and set up OS-level data encryption using Salt or Chef.
+   * For systems on other cloud providers, the ops team member must add a block data volume and set up OS-level data encryption using userdata or Chef.
 5. Once the system has been provisioned, the ops team member must contact the security team to inspect the new system. A member of the security team will verify that the secure baseline has been applied to the new system, including (but not limited to) verifying the following items:
    * Removal of default users used during provisioning.
    * Network configuration for system.
@@ -54,20 +55,18 @@ Cloudticity standardizes and automates configuration management through the use 
    * Intrusion detection and virus scanning software installed.
    * All items listed below in the operating system-specific subsections below.
 6. Once the security team member has verified the new system is correctly configured, the team member must add that system to the Nessus security scanner configuration.
-7. The new system may be rotated into production once the CTO verifies all the provisioning steps listed above have been correctly followed and has marked the Issue with the `Approved` state.
+7. The new system may be rotated into production once the CTO verifies all the provisioning steps listed above have been correctly followed and has marked the task with the `Approved` state.
 
 ### 9.3.1 Provisioning Linux Systems
 
-1. Linux systems have their baseline security configuration applied via Salt states. These baseline Salt states cover:
+1. Linux systems have their baseline security configuration applied via userdata shell scripts or chef. These baseline states cover:
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
-   * Installing and configuring the OSSEC IDS agent.
-   * Installing and configuring the ClamAV virus scanner.
+   * Installing and configuring the TMDS agent.
    * Installing and configuring the NTP daemon, including ensuring that modifying system time cannot be performed by unprivileged users.
-   * Configuring LUKS volumes for providers that do not have native support for encrypted data volumes, including ensuring that encryption keys are protected from unauthorized access.
    * Configuring authentication to the centralized LDAP servers.
    * Configuring audit logging as described in the [Auditing Policy section](#8.-auditing-policy).
-2. Any additional Salt states applied to the Linux system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
+2. Any additional states applied to the Linux system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
 
 ### 9.3.2 Provisioning Windows Systems
 
@@ -75,19 +74,18 @@ Cloudticity standardizes and automates configuration management through the use 
    * Joining the Windows Domain Controller and applying the Active Directory Group Policy configuration.
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
-   * Installing and configuring the OSSEC IDS agent.
-   * Installing and configuring the Avast virus scanner.
+   * Installing and configuring the TMDS agent.
    * Configuring the system clock, including ensuring that modifying system time cannot be performed by unprivileged users.
    * Configuring audit logging as described in the [Auditing Policy section](#8.-auditing-policy).
-2. Any additional Salt states applied to the Linux system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
+2. Any additional states applied to the Windows system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
 
 ### 9.3.3 Provisioning Management Systems
 
 1. Provisioning management systems such salt servers, LDAP servers, or VPN appliances follows the same procedure as provisioning a production system.
-2. Provisioning the first Salt server for a production pod requires bootstrapping Salt. The VP Engineering will oversee provisioning a new Salt server.
-   * Once the Salt server has been bootstrapped, the ops team member will apply the baseline configuration to the Salt server by performing a `highstate` operation as usual.
-3. Critical infrastructure services such as logging, monitoring, LDAP servers, or Windows Domain Controllers must be configured with appropriate Salt states.
-   * These Salt states have been approved by the VP Engineering and CTO to be in accordance with all Cloudticity policies, including setting appropriate:
+2. Provisioning the first userdata server for a production pod requires bootstrapping userdata. The VP of Engineering will oversee provisioning a new userdata server.
+   * Once the userdata server has been bootstrapped, the ops team member will apply the baseline configuration to the userdata server by performing a `highstate` operation as usual.
+3. Critical infrastructure services such as logging, monitoring, LDAP servers, or Windows Domain Controllers must be configured with appropriate userdata states.
+   * These userdata states have been approved by the VP of Engineering and CTO to be in accordance with all Cloudticity policies, including setting appropriate:
      * Audit logging requirements.
      * Password size, strength, and expiration requirements.
      * Transmission encryption requirements.
@@ -96,13 +94,13 @@ Cloudticity standardizes and automates configuration management through the use 
 ## 9.4 Changing Existing Systems
 
 1. Subsequent changes to already-provisioned systems are unconditionally handled by one of the following methods:
-   * Changes to Salt states or pillar values.
+   * Changes to userdata states or pillar values.
    * Changes to Chef recipes.
-   * For configuration changes that cannot be handled by Chef or Salt, a runbook describing exactly what changes will be made and by whom.
-2. Configuration changes to Chef recipes or Salt states must be initiated by creating a Merge Request in GitLab.
+   * For configuration changes that cannot be handled by Chef or userdata, a runbook describing exactly what changes will be made and by whom.
+2. Configuration changes to Chef recipes or userdata states must be initiated by creating a Merge Request in GitLab.
    * The ops team member will create a feature branch and make their changes on that branch.
    * The ops team member must test their configuration change locally when possible, or on a development and/or staging sandbox otherwise.
-   * At least one other ops team member must review the Chef or Salt change before merging the change into the main branch.
+   * At least one other ops team member must review the Chef or userdata change before merging the change into the main branch.
 3. In all cases, before rolling out the change to production, the ops team member must file a task in the DT project describing the change. This Issue must link to the reviewed Merge Request and/or include a link to the runbook.
 4. Once the request has been approved by the CTO, the ops team member may roll out the change into production environments.
 
