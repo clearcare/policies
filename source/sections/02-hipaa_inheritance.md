@@ -1,6 +1,6 @@
 # 2. HIPAA Inheritance
 
-## 2.1 HIPAA Inheritance for PaaS Customers
+## 2.1 HIPAA Inheritance for PaaS customers
 
 | **Administrative Controls** HIPAA Rule | Cloudticity Control | Inherited
 --- | --- | ---
@@ -43,7 +43,7 @@ Notification in the Case of Breach - 13402(a) and (b) | Breach Policy | Partiall
 Timelines of Notification - 13402(d)(1) | Breach Policy | Partially
 Content of Notification - 13402(f)(1) | Breach Policy | Partially
 
-## 2.2 HIPAA Inheritance for Platform Add-on Customers
+## 2.2 HIPAA Inheritance for Platform Add-on customers
 
 | **Administrative Controls** HIPAA Rule | Cloudticity Control | Inherited
 --- | --- | ---

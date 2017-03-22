@@ -116,7 +116,7 @@ Recovery Goal: The goal is to rebuild Cloudticity infrastructure to a production
 
 The tasks outlines below are not sequential and some can be run in parallel.
 
-1. Contact Partners and Customers affected - Web Services
+1. Contact Partners and customers affected - Web Services
 2. Assess damage to the environment - Web Services
 3. Begin replication of new environment using automated and tested scripts, currently Chef and Salt. At this point it is determined whether to recover in AWS. - Dev Ops
 4. Test new environment using pre-written tests - Web Services
