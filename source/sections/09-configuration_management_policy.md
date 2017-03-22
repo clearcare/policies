@@ -103,7 +103,7 @@ Cloudticity standardizes and automates configuration management through the use 
    * The ops team member will create a feature branch and make their changes on that branch.
    * The ops team member must test their configuration change locally when possible, or on a development and/or staging sandbox otherwise.
    * At least one other ops team member must review the Chef or Salt change before merging the change into the main branch.
-3. In all cases, before rolling out the change to production, the ops team member must file an Issue in the DT project describing the change. This Issue must link to the reviewed Merge Request and/or include a link to the runbook.
+3. In all cases, before rolling out the change to production, the ops team member must file a task in the DT project describing the change. This Issue must link to the reviewed Merge Request and/or include a link to the runbook.
 4. Once the request has been approved by the CTO, the ops team member may roll out the change into production environments.
 
 ## 9.5 Patch Management Procedures

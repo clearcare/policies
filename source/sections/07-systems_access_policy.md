@@ -34,7 +34,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 ## 7.2 Access Establishment and Modification
 
 1. Requests for access to Cloudticity Managed Services Platform systems and applications is made formally using the following process:
-  1. The Cloudticity workforce member, or their manager, initiates the access request by creating an Issue in the Zendesk Compliance Review Activity (CRA) Project.
+  1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
      * User identities must be verified prior to granting access to new accounts.
      * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
      * For new accounts, the method used to verify the user's identity must be recorded on the Issue.
@@ -48,7 +48,7 @@ Access to Cloudticity systems and application is limited for all users, includin
 2. Access is not granted until receipt, review, and approval by the Cloudticity Security Officer;
 3. The request for access is retained for future reference.
 4. All access to Cloudticity systems and services are reviewed and updated on an bi-annual basis to assure proper authorizations are in place commensurate with job functions. The process for conducting reviews is outlined below:
-   1. The Security Officer initiates the review of user access by creating an Issue in the Zendesk Compliance Review Activity (CRA) Project.
+   1. The Security Officer initiates the review of user access by creating a task in the Teamwork Compliance Review Activity (CRA) Project.
    2. The Security Officer, or a Privacy Officer, is assigned to review levels of access for each Cloudticity workforce member.
    3. If user access is are found during review that is not in line with the least privilege principle, the process below is used to modify user access and notify the user of access changes. Once those steps are completed, the Issue is then reviewed again.
    4. Once the review is completed, the Security Officer approves or rejects the Issue. If the Issue is rejected, it goes back for further review and documentation.

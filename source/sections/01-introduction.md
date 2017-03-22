@@ -1,6 +1,6 @@
 # 1. Introduction
 
-Cloudticity, LLC ("Cloudticity") is committed to ensuring the confidentiality, privacy, integrity, and availability of all electronic protected health information (ePHI) it receives, maintains, processes and/or transmits on behalf of its Customers. As providers of compliant, hosted infrastructure used by health technology vendors, developers, designers, agencies, custom development shops, and enterprises, Cloudticity strives to maintain compliance, proactively address information security, mitigate risk for its Customers, and assure known breaches are completely and effectively communicated in a timely manner. The following documents address core policies used by Cloudticity to maintain compliance and assure the proper protections of infrastructure used to store, process, and transmit ePHI for Cloudticity Customers.
+Cloudticity, LLC. ("Cloudticity") is committed to ensuring the confidentiality, privacy, integrity, and availability of all electronic protected health information (ePHI) it receives, maintains, processes and/or transmits on behalf of its Customers. As providers of compliant, hosted infrastructure used by health technology vendors, developers, designers, agencies, custom development shops, and enterprises, Cloudticity strives to maintain compliance, proactively address information security, mitigate risk for its Customers, and assure known breaches are completely and effectively communicated in a timely manner. The following documents address core policies used by Cloudticity to maintain compliance and assure the proper protections of infrastructure used to store, process, and transmit ePHI for Cloudticity Customers.
 
 Cloudticity provides secure and compliant cloud-based software. This hosted software falls into two broad categories: 1) **Platform as a Service (PaaS)** and 2) **Platform Add-ons**. These Categories are cited throughout polices as Customers in each category inherit different policies, procedures, and obligations from Cloudticity.
 
@@ -8,7 +8,7 @@ Cloudticity provides secure and compliant cloud-based software. This hosted soft
 
 PaaS Customers utilize hosted software and infrastructure from Cloudticity to deploy, host, and scale custom developed applications and configured databases. These customers are deployed into compliant containers run on systems secured and managed by Cloudticity. Cloudticity does not have insight or access into application level data of PaaS Customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. Cloudticity makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS Customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, OSSEC throughout the Platform, etc).
 
-PaaS Customers can opt for a list of Services from Cloudticity, which include Backup Service, Logging Service, IDS Service, and Disaster Recovery Service. These services are not standard and PaaS Customers must sign up for them in order for Cloudticity to manage these areas of security and compliance.
+PaaS Customers can opt for a list of Services from Cloudticity, which include Backup Service, Logging Service, IDS Service, and Disaster Recovery Service. Some of these services are not standard and PaaS Customers must sign up for them in order for Cloudticity to manage these areas of security and compliance.
 
 ## 1.2 Platform Add-ons
 
@@ -57,11 +57,11 @@ Cloudticity, at its sole discretion, shares audit reports, including its HITRUST
 The following process is used to request audit reports:
 
 1. Email is sent to compliance-reports@cloudticity.com. In the email, please specify the type of report being requested and any required timelines for the report.
-2. Cloudticity staff will log an Issue with the details of the request into the Cloudticity Compliance Review Activities Project on JIRA. JIRA is used to track requests status and outcomes.
+2. Cloudticity staff will log a task with the details of the request into the Cloudticity Compliance Review Activities Project on Zendesk. Zendesk is used to track requests status and outcomes.
 3. Cloudticity will confirm if a current NDA is in place with the party requesting the audit report. If there is no NDA in place, Cloudticity will send one for execution.
-4. Once it has been confirmed that an NDA is executed, Cloudticity staff will move the JIRA Issue to "Under Review".
+4. Once it has been confirmed that an NDA is executed, Cloudticity staff will move the Zendesk Issue to "Under Review".
 5. The Cloudticity Security Officer or Privacy Officer must Approve or Reject the Issue. If the Issue is rejected, Cloudticity will notify the requesting party that we cannot share the requested report.
-4. If the Issue has been Approved, Cloudticity will send the customer the requested audit report and complete the JIRA Issue for the request.
+4. If the Issue has been Approved, Cloudticity will send the customer the requested audit report and complete the Zendesk Issue for the request.
 
 ## 1.6 Version Control
 
