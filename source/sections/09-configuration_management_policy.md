@@ -1,6 +1,6 @@
 # 9. Configuration Management Policy
 
-Datica standardizes and automates configuration management through the use of Chef/Salt scripts as well as documentation of all changes to production systems and networks. Chef and Salt automatically configure all Datica systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
+Cloudticity standardizes and automates configuration management through the use of Chef/Salt scripts as well as documentation of all changes to production systems and networks. Chef and Salt automatically configure all Cloudticity systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
 
 ## 9.1 Applicable Standards
 
@@ -15,31 +15,31 @@ Datica standardizes and automates configuration management through the use of Ch
 ## 9.2 Configuration Management Policies
 
 1. Chef and Salt are used to standardize and automate configuration management.
-2. No systems are deployed into Datica environments without approval of the Datica CTO.
-3. All changes to production systems, network devices, and firewalls are approved by the Datica CTO before they are implemented to assure they comply with business and security requirements.
+2. No systems are deployed into Cloudticity environments without approval of the Cloudticity CTO.
+3. All changes to production systems, network devices, and firewalls are approved by the Cloudticity CTO before they are implemented to assure they comply with business and security requirements.
 4. All changes to production systems are tested before they are implemented in production.
 5. Implementation of approved changes are only performed by authorized personnel.
 6. Tooling to generate an up-to-date inventory of systems, including corresponding architecture diagrams for related products and services, is hosted on GitLab.
    * All systems are categorized as production and utility to differentiate based on criticality.
    * The Security Officer maintains scripts to generate inventory lists on demand using APIs provided by each cloud provider.
-   * These scripts are used to generate the diagrams and asset lists required by the Risk Assessment phase of Datica's Risk Management procedures ([§4.3.1](#4.3-risk-management-procedures)).
+   * These scripts are used to generate the diagrams and asset lists required by the Risk Assessment phase of Cloudticity's Risk Management procedures ([§4.3.1](#4.3-risk-management-procedures)).
    * After every use of these scripts, the Security Officer will verify their accuracy by reconciling their output with recent changes to production systems. The Security Officer will address any discrepancies immediately with changes to the scripts.
 7. All frontend functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers or containers.
 8. All software and systems are tested using unit tests and end to end tests.
 9. All committed code is reviewed using pull requests to assure software code quality and proactively detect potential security issues in development.
-10. Datica utilizes development and staging environments that mirror production to assure proper function.
-11. Datica also deploys environments locally using Vagrant to assure functionality before moving to staging or production.
+10. Cloudticity utilizes development and staging environments that mirror production to assure proper function.
+11. Cloudticity also deploys environments locally using Vagrant to assure functionality before moving to staging or production.
 12. All formal change requests require unique ID and authentication.
-13. Datica uses the [Security Technical Implementation Guides (STIGs)](http://iase.disa.mil/stigs/) published by the Defense Information Systems Agency as a baseline for hardening systems.
+13. Cloudticity uses the [Security Technical Implementation Guides (STIGs)](http://iase.disa.mil/stigs/) published by the Defense Information Systems Agency as a baseline for hardening systems.
     * Windows-based systems use a baseline Active Directory group policy configuration in conjunction with the Windows Server 2012 STIG.
     * Linux-based systems use a Red Hat Enterprise Linux STIG which has been adapted for Ubuntu and improved based on the results of subsequent vulnerability scans and risk assessments.
 14. Clocks are continuously synchronized to an authoritative source across all systems using NTP or a platform-specific equivalent. Modifying time data on systems is restricted.
 
 ## 9.3 Provisioning Production Systems
 
-1. Before provisioning any systems, ops team members must file a request in the JIRA Deployment Ticket (DT) project.
-   * JIRA access requires authenticated users.
-   * The CTO grants access to the JIRA DT project following the procedures covered in the [Access Establishment and Modification section](#7.2-access-establishment-and-modification).
+1. Before provisioning any systems, ops team members must file a request in the Zendesk Deployment Ticket (DT) project.
+   * Zendesk access requires authenticated users.
+   * The CTO grants access to the Zendesk DT project following the procedures covered in the [Access Establishment and Modification section](#7.2-access-establishment-and-modification).
 2. The VP Engineering or CTO must approve the provisioning request before any new system can be provisioned.
 3. Once provisioning has been approved, the ops team member must configure the new system according to the standard baseline chosen for the system's role.
    * For Linux systems, this means adding the appropriate grains to the Salt configuration file and running a `highstate` operation.
@@ -87,7 +87,7 @@ Datica standardizes and automates configuration management through the use of Ch
 2. Provisioning the first Salt server for a production pod requires bootstrapping Salt. The VP Engineering will oversee provisioning a new Salt server.
    * Once the Salt server has been bootstrapped, the ops team member will apply the baseline configuration to the Salt server by performing a `highstate` operation as usual.
 3. Critical infrastructure services such as logging, monitoring, LDAP servers, or Windows Domain Controllers must be configured with appropriate Salt states.
-   * These Salt states have been approved by the VP Engineering and CTO to be in accordance with all Datica policies, including setting appropriate:
+   * These Salt states have been approved by the VP Engineering and CTO to be in accordance with all Cloudticity policies, including setting appropriate:
      * Audit logging requirements.
      * Password size, strength, and expiration requirements.
      * Transmission encryption requirements.
@@ -108,7 +108,7 @@ Datica standardizes and automates configuration management through the use of Ch
 
 ## 9.5 Patch Management Procedures
 
-1. Datica uses automated tooling to ensure systems are up-to-date with the latest security patches.
+1. Cloudticity uses automated tooling to ensure systems are up-to-date with the latest security patches.
 2. On Ubuntu Linux systems, the unattended-upgrades tool is used to apply security patches in phases.
    * The security team maintains a mirrored snapshot of security patches from the upstream OS vendor. This mirror is synchronized bi-weekly and applied to development systems nightly.
    * If the development systems function properly after the two-week testing period, the security team will promote that snapshot into the mirror used by all staging systems. These patches will be applied to all staging systems during the next nightly patch run.
