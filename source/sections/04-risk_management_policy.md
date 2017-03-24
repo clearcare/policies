@@ -30,8 +30,8 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
    2. Protect against any reasonably anticipated threats or hazards to the security or integrity of customer ePHI;
    3. Protect against any reasonably anticipated uses or disclosures of customer ePHI that are not permitted or required; and
    4. Ensure compliance by all workforce members.
-4. Any risk remaining (residual) after other risk controls have been applied, requires sign off by the senior management and Cloudticity's Security Officer.
-5. All Cloudticity workforce members are expected to fully cooperate with all persons charged with doing risk management work, including contractors and audit personnel. Any workforce member that violates this policy will be subject to disciplinary action based on the severity of the violation, as outlined in the Cloudticity Roles Policy.
+4. Any risk remaining (residual) after other risk controls have been applied, requires sign off by senior management and Cloudticity's Security Officer.
+5. All Cloudticity workforce members are expected to fully cooperate with all persons charged with doing risk management work, including contractors and audit personnel. Any workforce member that violates this policy will be subject to disciplinary action based on the severity of the violation, as outlined in the [Cloudticity Roles Policy](05-roles_policy.md).
 6. The implementation, execution, and maintenance of the information security risk analysis and risk management process is the responsibility of Cloudticity's Security Officer (or other designated employee), and the identified Risk Management Team.
 7. All risk management efforts, including decisions made on what controls to put in place as well as those to not put into place, are documented and the documentation is maintained for six years.
 8. The details of the Risk Management Process, including risk assessment, discovery, and mitigation, are outlined in detail below. The process is tracked, measured, and monitored using the following procedures:
