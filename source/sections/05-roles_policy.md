@@ -86,7 +86,7 @@ These organizational responsibilities include, but are not limited to the follow
     * Promptly, properly, and consistently investigates and addresses reported violations and takes steps to prevent recurrence.
     * Applies consistent and appropriate sanctions against workforce members who fail to comply with the security policies and procedures of Cloudticity.
     * Mitigates, to the extent practicable, any harmful effect known to Cloudticity of a use or disclosure of ePHI in violation of Cloudticity's policies and procedures, even if the effect is the result of actions of Cloudticity business associates, customers, and/or partners.
-11. Reports security efforts and incidents to administration immediately upon discovery. Responsibilities in the case of a known ePHI breach are documented in the [Cloudticity Breach Policy](source/sections/12-breach_policy.md).
+11. Reports security efforts and incidents to administration immediately upon discovery. Responsibilities in the case of a known ePHI breach are documented in the [Cloudticity Breach Policy](12-breach_policy.md).
 12. The Security Officer facilitates the communication of security updates and reminders to all workforce members to which it pertains. Examples of security updates and reminders include, but are not limited to:
     * Latest malicious software or virus alerts;
     * Cloudticity's requirement to report unauthorized attempts to access ePHI;
@@ -111,7 +111,7 @@ These organizational responsibilities include, but are not limited to the follow
 
 Although the Security Officer is responsible for implementing and overseeing all activities related to maintaining compliance, it is the responsibility of all workforce members (i.e. team leaders, supervisors, managers, directors, co-workers, etc.) to supervise all workforce members and any other user of Cloudticity's systems, applications, servers, workstations, etc. that contain ePHI.
 
-1. Monitor workstations and applications for unauthorized use, tampering, and theft and report non-compliance according to the [Cloudticity Incident Response Policy](source/sections/11-incident_response_policy.md).
+1. Monitor workstations and applications for unauthorized use, tampering, and theft and report non-compliance according to the [Cloudticity Incident Response Policy](11-incident_response_policy.md).
 2. Assist the Security and Privacy Officers to ensure appropriate role-based access is provided to all users.
 3. Take all reasonable steps to hire, retain, and promote workforce members and provide access to users who comply with the Security regulation and Cloudticity's security policies and procedures.
 
