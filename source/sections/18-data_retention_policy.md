@@ -4,7 +4,7 @@ Despite not being a requirement within HIPAA, Cloudticity understands and apprec
 
 ## 18.1 State Medical Record Laws
 
-* [Listing of state requirements for medical record retention](http://www.healthit.gov/sites/default/files/appa7-1.pdf)
+* [Listing of state requirements for medical record retention.](http://www.healthit.gov/sites/default/files/appa7-1.pdf)
 
 ## 18.2 Data Retention Policy
 
