@@ -92,14 +92,14 @@ These organizational responsibilities include, but are not limited to the follow
     * Cloudticity's requirement to report unauthorized attempts to access ePHI;
     * Changes in creating or changing passwords;
     * Additional security-focused training is provided to all workforce members by the Security Officer. This training includes, but is not limited to:
-    * Data backup plans;
-    * System auditing procedures;
-    * Redundancy procedures;
-    * Contingency plans;
-    * Virus protection;
-    * Patch management;
-    * Media Disposal and/or Re-use;
-    * Documentation requirements.
+      * Data backup plans;
+      * System auditing procedures;
+      * Redundancy procedures;
+      * Contingency plans;
+      * Virus protection;
+      * Patch management;
+      * Media Disposal and/or Re-use;
+      * Documentation requirements.
 13. The Security Officer works with the CFO to ensure that any security objectives have appropriate consideration during the budgeting process.
     * In general, security and compliance are core to Cloudticity's technology and service offerings; in most cases this means security-related objectives cannot be split out to separate budget line items.
     * For cases that *can* be split out into discrete items, such as licenses for commercial tooling, the Security Officer follows Cloudticity's standard corporate budgeting process.
