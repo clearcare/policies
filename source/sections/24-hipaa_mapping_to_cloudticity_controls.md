@@ -26,7 +26,7 @@ Access Control - 164.312(a)(1) | Systems Access Policy
 Audit Controls - 164.312(b) | Auditing Policy
 Integrity - 164.312('c')(1) | Systems Access, Auditing, and IDS Policies
 Person or Entity Authentication - 164.312(d) | Systems Access Policy
-Transmission Security - 164.312(e)(1) | System Access and Data Management Policy
+Transmission Security - 164.312(e)(1) | System Access and Data Management Policies
 
 | **Organizational Requirements** HIPAA Rule | Cloudticity Control
 --- | ---
