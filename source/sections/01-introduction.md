@@ -26,7 +26,7 @@ Cloudticity does not act as a covered entity. When Cloudticity does operate as a
 
 Certain aspects of compliance cannot be inherited. Because of this, Cloudticity customers, in order to achieve full compliance or HITRUST Certification, must implement certain organizational policies. These policies and aspects of compliance fall outside of the services and obligations of Cloudticity.
 
-Mappings of HIPAA Rules to Cloudticity controls and a mapping of what rules are inherited by customers, both Platform customers and Add-on customers, are covered in [§2](source/sections/02-hipaa_inheritance.md).
+Mappings of HIPAA Rules to Cloudticity controls and a mapping of what rules are inherited by customers, both Platform customers and Add-on customers, are covered in [§2](02-hipaa_inheritance.md).
 
 ## 1.4 Cloudticity Organizational Concepts
 
