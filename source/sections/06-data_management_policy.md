@@ -21,11 +21,10 @@ Violation of this policy and its procedures by workforce members may result in c
 ## 6.2 Backup Policy and Procedures
 
 1. Perform daily (minimum) snapshot backups of all systems that process, store, or transmit ePHI for Cloudticity customers, including PaaS customers that utilize the Cloudticity Backup Service.
-2. Cloudticity Ops Team, lead by VP of Engineering, is designated to be in charge of backups.
-3. Dev Ops Team members are trained and assigned to complete backups and manage the backup media.
-4. Document backups
+2. Cloudticity's Ops Team, lead by the VP of Engineering, is designated to be in charge of backups.
+3. Ops Team members are trained and assigned to complete installation of automated backups.
+4. Backup descriptions are created as part of the Cloudticity Oxygen managed services platform automation. Description data includes, but is not limited to:
    * Name of the system
    * Date & time of backup
-   * Where backup stored (or to whom it was provided)
-5. Securely encrypt stored backups in a manner that protects them from loss or environmental damage.
-6. Test backups and document that files have been completely and accurately restored from the backup media.
+5. Stored backups are secured and encrypted in a manner that protects them from loss or environmental damage.
+6. Backups are tested and verification is completed to ensure that files have been completely and accurately restored from the backups.
