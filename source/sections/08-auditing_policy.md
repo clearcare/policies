@@ -1,6 +1,8 @@
 # 8. Auditing Policy
 
-Cloudticity shall audit access and activity of electronic protected health information (ePHI) applications and systems in order to ensure compliance. The Security Rule requires healthcare organizations to implement reasonable hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI. Audit activities may be limited by application, system, and/or network auditing capabilities and resources. Cloudticity shall make reasonable and good-faith efforts to safeguard information privacy and security through a well-thought-out approach to auditing that is consistent with available resources.
+Cloudticity currently does not access, store, transmit, or process electronic protected health information (ePHI). If Cloudticity were to implement services where ePHI would be stored, transmitted, or processed, the organization shall audit access and activity of electronic protected health information (ePHI) applications and systems in order to ensure compliance in accordance with the remainder of this policy.
+
+The Security Rule requires healthcare organizations to implement reasonable hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI. Audit activities may be limited by application, system, and/or network auditing capabilities and resources. Cloudticity shall make reasonable and good-faith efforts to safeguard information privacy and security through a well-thought-out approach to auditing that is consistent with available resources.
 
 It is the policy of Cloudticity to safeguard the confidentiality, integrity, and availability of applications, systems, and networks. To ensure that appropriate safeguards are in place and effective, Cloudticity shall audit access and activity to detect, report, and guard against:
 
@@ -9,8 +11,6 @@ It is the policy of Cloudticity to safeguard the confidentiality, integrity, and
 * Performance problems and flaws in applications;
 * Improper alteration or destruction of ePHI;
 * Out of date software and/or software known to have vulnerabilities.
-
-This policy applies to all Cloudticity Add-on systems, including BaaS, that store, transmit, or process ePHI. This policy, and associated procedures, do not apply to PaaS customers that do not choose Cloudticity Logging Service.
 
 ## 8.1 Applicable Standards
 
@@ -42,16 +42,15 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
    * Assign the task of reviewing the audit reports to the workforce member responsible for the application, system, or network, the Privacy Officer, or any other individual determined to be appropriate for the task;
    * Organize and provide oversight to a team structure charged with audit compliance activities (e.g., parameters, frequency, sample sizes, report formats, evaluation, follow-up, etc.).
    * All connections to Cloudticity are monitored. Access is limited to certain services, ports, and destinations. Exceptions to these rules, if created, are reviewed on an annual basis.
-2. Cloudticity's auditing processes shall address access and activity at the following levels listed below. In the case of PaaS customers, Application and User level auditing is the responsibility of the customer; Cloudticity provides software to aggregate and view User and Application logs, but the log data collected is the responsibility of the PaaS customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
+2. Cloudticity's auditing processes shall address access and activity at the following levels listed below. In the case of PaaS customers, Application and User level auditing is the responsibility of the customer. Auditing processes may address date and time of each log-on attempt, date and time of each log-off attempt, devices used, functions performed, etc.
    * User: User level audit trails generally monitor and log all commands directly initiated by the user, all identification and authentication attempts, and data and services accessed.
    * Application: Application level audit trails generally monitor and log all user activities, including data accessed and modified and specific actions.
    * System: System level audit trails generally monitor and log user activities, applications accessed, and other system defined specific actions. Cloudticity utilizes file system monitoring from TMDS to assure the integrity of file system data.
    * Network: Network level audit trails generally monitor information on what is operating, penetrations, and vulnerabilities.
-3. Cloudticity shall log all incoming and outgoing traffic to into and out of its environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to Cloudticity.
-4. Cloudticity utilizes TMDS to scan all systems for malicious and unauthorized software every 2 hours and at reboot of systems.
-5. Cloudticity leverages process monitoring tools throughout its environment.
-6. Cloudticity treats its Dashboard as a Platform Add-on and, as such, it logs all activity associated with Dashboard Access.
-7. Cloudticity uses TMDS to monitor the integrity of log files by utilizing TMDS Integrity Checking capabilities.
+3. Cloudticity shall log all incoming and outgoing traffic to the environment. This includes all successful and failed attempts at data access and editing. Data associated with this data will include origin, destination, time, and other relevant details that are available to Cloudticity.
+4. Cloudticity utilizes TMDS to scan all systems for malicious and unauthorized software daily and at reboot of systems.
+5. Cloudticity leverages monitoring tools throughout its environment.
+7. Cloudticity uses TMDS to monitor the integrity of log files by utilizing TMDS Integrity Monitoring capabilities.
 8. Cloudticity shall identify "trigger events" or criteria that raise awareness of questionable conditions of viewing of confidential information. The "events" may be applied to the entire Cloudticity Oxygen Managed Services Platform or may be specific to a customer, partner, business associate, Platform Add-on or application (See Listing of Potential Trigger Events below).
 9. In addition to trigger events, Cloudticity utilizes TMDS log correlation functionality to proactively identify and enable alerts based on log data.
 10. Logs are reviewed weekly by the Security Officer.
@@ -74,30 +73,30 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
 ## 8.3 Audit Requests
 
 1. A request may be made for an audit for a specific cause. The request may come from a variety of sources including, but not limited to, Privacy Officer, Security Officer, customer, Partner, or an Application owner or application user.
-2. A request for an audit for specific cause must include time frame, frequency, and nature of the request. The request must be reviewed and approved by Cloudticity's Privacy or Security Officer.
+2. A request for an audit for specific cause must include time frame, frequency, and nature of the request. The request must be reviewed and approved by Cloudticity's Privacy Officer or Security Officer.
 3. A request for an audit must be approved by Cloudticity's Privacy Officer and/or Security Officer before proceeding. Under no circumstances shall detailed audit information be shared with parties without proper permissions and access to see such data.
-   * Should the audit disclose that a workforce member has accessed ePHI inappropriately, the minimum necessary/least privileged information shall be shared with Cloudticity's Security Officer to determine appropriate sanction/ corrective disciplinary action.
+   * Should the audit disclose that a workforce member has accessed ePHI inappropriately, the minimum necessary/least privileged information shall be shared with Cloudticity's Security Officer to determine appropriate sanction/corrective disciplinary action.
    * Only de-identified information shall be shared with customer or Partner regarding the results of the investigative audit process. This information will be communicated to the appropriate personnel by Cloudticity's Privacy Officer or designee. Prior to communicating with customers and partners regarding an audit, it is recommended that Cloudticity consider seeking risk management and/or legal counsel.
 
 ## 8.4 Review and Reporting of Audit Findings
 
 1. Audit information that is routinely gathered must be reviewed in a timely manner, currently monthly, by the responsible workforce member(s). On a quarterly basis, logs are reviewed to assure the proper data is being captured and retained. The following process details how log reviews are done at Cloudticity:
-  1. The Security Officer initiates the log review by creating a task in the Teamwork project: Compliance Review Activity (CRA).
+  1. The log review is initiated by a recurring task in the Teamwork project: Compliance Review Activity (CRA).
   2. The Security Officer, or a Cloudticity Security Engineer assigned by the Security Officer, is assigned to review the logs.
   3. Relevant audit log findings are added to the task; these findings are investigated in a later step. Once those steps are completed, the task is then reviewed again.
-  4. Once the review is completed, the Security Officer approves or rejects the task. Relevant findings are reviewed a this stage. If the task is rejected, it goes back for further review and documentation. The communications protocol around specific findings are outlined below.
+  4. Once the review is complete, the Security Officer approves or rejects the task. Relevant findings are reviewed at this stage. If the task is rejected, it goes back for further review and documentation. The communications protocol around specific findings are outlined below.
   5. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required.
 2. The reporting process shall allow for meaningful communication of the audit findings to those workforce members, customers, or Partners requesting the audit.
    * Significant findings shall be reported immediately in a written format. Cloudticity's security incident response form may be utilized to report a single event.
    * Routine findings shall be reported to the sponsoring leadership structure in a written report format.
 3. Reports of audit results shall be limited to internal use on a minimum necessary/need-to-know basis. Audit results shall not be disclosed externally without administrative and/or legal counsel approval.
-4. Security audits constitute an internal, confidential monitoring practice that may be included in Cloudticity's performance improvement activities and reporting. Care shall be taken to ensure that the results of the audits are disclosed to administrative level oversight structures only and that information which may further expose organizational risk is shared with extreme caution. Generic security audit information may be included in organizational reports (individually-identifiable e PHI shall not be included in the reports).
+4. Security audits constitute an internal, confidential monitoring practice that may be included in Cloudticity's performance improvement activities and reporting. Care shall be taken to ensure that the results of the audits are disclosed to administrative level oversight structures only and that information which may further expose organizational risk is shared with extreme caution. Generic security audit information may be included in organizational reports (individually-identifiable ePHI shall not be included in the reports).
 5. Whenever indicated through evaluation and reporting, appropriate corrective actions must be undertaken. These actions shall be documented and shared with the responsible workforce members, customers, and/or Partners.
 6. Log review activity is monitored on a quarterly basis using Teamwork reporting to assess compliance with above policy.
 
 ## 8.5 Auditing customer and Partner Activity
 
-1. Periodic monitoring of customer and Partner activity shall be carried out to ensure that access and activity is appropriate for privileges granted and necessary to the arrangement between Cloudticity and the 3rd party. Cloudticity will make every effort to assure customers and Partners do not gain access to data outside of their own Environments.
+1. Periodic monitoring of customer and Partner activity shall be carried out to ensure that access and activity is appropriate for privileges granted and necessary to the arrangement between Cloudticity and the 3rd party. Cloudticity will make every effort to assure customers and Partners do not gain access to data outside of their own environments.
 2. If it is determined that the customer or Partner has exceeded the scope of access privileges, Cloudticity's leadership must remedy the problem immediately.
 3. If it is determined that a customer or Partner has violated the terms of the HIPAA business associate agreement or any terms within the HIPAA regulations, Cloudticity must take immediate action to remediate the situation. Continued violations may result in discontinuation of the business relationship.
 
@@ -107,8 +106,6 @@ This policy applies to all Cloudticity Add-on systems, including BaaS, that stor
 2. All audit logs are protected in transit and encrypted at rest to control access to the content of the logs.
 3. Audit logs shall be stored on a separate system to minimize the impact auditing may have on the privacy system and to prevent access to audit trails by those with system administrator privileges.
    * Separate systems are used to apply the security principle of "separation of duties" to protect audit trails from hackers.
-   * Cloudticity logging servers include Elasticsearch, Logstash, and Kibana (ELK) as part of their baseline configuration to ease reviewing of audit log data. The ELK toolkit provides message summarization, reduction, and reporting functionality.
-4. For PaaS customers choosing to use Cloudticity logging services, log data will be separated from the log data of other Cloudticity customers.
 
 ## 8.7 Workforce Training, Education, Awareness and Responsibilities
 
