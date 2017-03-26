@@ -18,11 +18,11 @@ In the future there may be 3rd party add-on services available as part of the Cl
 
 ## 1.3 Compliance Inheritance
 
-Cloudticity provides compliant hosted software infrastructure for its customers. Cloudticity is going through a HIPAA compliance audit by a national, 3rd party compliance firm, to validate and map organizational policies and technical settings to HIPAA rules. Cloudticity's infrastructure at AWS is HITRUST Certified.
+Cloudticity provides compliant hosted software infrastructure for its customers. Cloudticity is going through a HIPAA compliance audit by a national, 3rd party compliance firm, to validate and map organizational policies and technical settings to HIPAA rules.
 
-Cloudticity signs business associate agreements (BAAs) with its customers. These BAAs outline Cloudticity obligations and customer obligations, as well as liability in the case of a breach. In providing infrastructure and managing security configurations that are a part of the technology requirements that exist in HIPAA and HITRUST, as well as future compliance frameworks, Cloudticity manages various aspects of compliance for customers. The aspects of compliance that Cloudticity manages for customers are inherited by customers, and Cloudticity assumes the risk associated with those aspects of compliance. In doing so, Cloudticity helps customers achieve and maintain compliance, as well as mitigates customers risk.
+Cloudticity signs business associate agreements (BAAs) with its customers. These BAAs outline Cloudticity obligations and customer obligations, as well as liability in the case of a breach. In providing infrastructure and managing security configurations that are a part of the technology requirements that exist in HIPAA and HITRUST, as well as future compliance frameworks, Cloudticity manages various aspects of compliance for customers. The aspects of compliance that Cloudticity manages for customers are inherited by customers, and Cloudticity assumes the risk associated with those aspects of compliance. In doing so, Cloudticity helps customers achieve and maintain compliance, as well as mitigate risk.
 
-Cloudticity does not act as a covered entity. When Cloudticity does operate as a business associate (not a subcontractor), Cloudticity does not interface with users to obtain or provide access to ePHI. Access to ePHI is through our customers' applications.
+Cloudticity does not act as a covered entity. When Cloudticity does operate as a business associate (not a subcontractor), Cloudticity does not interface with users to obtain or provide access to ePHI. Access to ePHI is handled through our customers' applications.
 
 Certain aspects of compliance cannot be inherited. Because of this, Cloudticity customers, in order to achieve full compliance or HITRUST Certification, must implement certain organizational policies. These policies and aspects of compliance fall outside of the services and obligations of Cloudticity.
 
@@ -46,7 +46,7 @@ Additionally, security groups are used on each server for logical segmentation. 
 
 The OpenVPN appliance and Wordpress web servers are externally facing and accessible via the Internet. The database servers, where potential ePHI resides, are located on the internal Cloudticity network and can only be accessed directly over an SSH connection through the OpenVPN appliance. Access to the internal database is restricted to a limited number of personnel and strictly controlled to only those personnel with a business justified reason. Remote access to the internal servers is not accessible except through the load balancers and OpenVPN.
 
-All platform add-ons and operating systems are tested end-to-end for usability, security and impact prior to deployment to production.
+All platform add-ons and operating systems are tested end-to-end for usability, security, and impact prior to deployment to production.
 
 ## 1.5 Requesting Audit and Compliance Reports
 
@@ -58,7 +58,7 @@ The following process is used to request audit reports:
 2. Upon receipt of the email, a Zendesk ticket with the details of the request will be automatically created and assigned to the Cloudticity Security Officer or Privacy Officer. Zendesk is a ticket management application used to track request status and outcomes.
 3. Cloudticity will confirm if a current NDA is in place with the party requesting the audit report. If there is no NDA in place, Cloudticity will send one for execution.
 4. Once it has been confirmed that an NDA is executed, the Cloudticity Security Officer or Privacy Officer must Approve or Reject the request. If the request is rejected, Cloudticity will notify the requesting party that we cannot share the requested report and solve the Zendesk ticket.
-4. If the request has been Approved, Cloudticity will send the customer the requested audit report and solve the Zendesk ticket.
+4. If the request is approved, Cloudticity will send the customer the requested audit report and solve the Zendesk ticket.
 
 ## 1.6 Version Control
 
