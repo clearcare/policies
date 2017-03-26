@@ -16,7 +16,7 @@
 
 * *Backup*: The process of making an electronic copy of data stored in a computer system. This can either be complete, meaning all data and programs, or incremental, including just the data that changed from the previous backup.
 
-* *Backup Service*: A logging service for unifying system and application logs, encrypting them, and providing a dashboard for them. Offered with all Cloudticity Add-ons and as an option for PaaS customers.
+* *Backup Service*: A custom built, AWS native service for PaaS customer to create machine images or snapshots on customer intervals. Also supports custom retention policies for storing backups based on number of months, weeks, days, and/or hours.
 
 * *Breach*: Means the acquisition, access, use, or disclosure of protected health information (PHI) in a manner not permitted under the Privacy Rule which compromises the security or privacy of the PHI. For purpose of this definition, "compromises the security or privacy of the PHI" means poses a significant risk of financial, reputational, or other harm to the individual. A use or disclosure of PHI that does not include the identifiers listed at §164.514(e)(2), limited data set, date of birth, and zip code does not compromise the security or privacy of the PHI. Breach excludes:
 
@@ -61,13 +61,11 @@
   * Automated alerts of activity from log monitors like TMDS;
   * An alert from TMDS about file system integrity issues.
 
-* *Intrusion Detection System (IDS)*: A software tool use to automatically detect and notify in the event of possible unauthorized network and/or system access.
+* *Intrusion Detection & Prevention System (IDS/IPS)*: A software tool use to automatically detect, prevent, and/or notify in the event of possible unauthorized network and/or system access.
 
-* *IDS Service*: An Intrusion Detection Service for providing IDS notification to customers in the case of suspicious activity. Offered with all Cloudticity Add-ons and as an option for PaaS customers.
+* *IDS/IPS Service*: An Intrusion Detection and Prevention Service for providing IDS notification to customers in the case of suspicious activity. Offered with all Cloudticity Add-ons and as an option for PaaS customers.
 
 * *Law Enforcement Official*: Any officer or employee of an agency or authority of the United States, a State, a territory, a political subdivision of a State or territory, or an Indian tribe, who is empowered by law to investigate or conduct an official inquiry into a potential violation of law; or prosecute or otherwise conduct a criminal, civil, or administrative proceeding arising from an alleged violation of law.
-
-* *Logging Service*: A logging service for unifying system and application logs, encrypting them, and providing a dashboard for them. Offered with all Cloudticity Add-ons and as an option for PaaS customers.
 
 * *Messaging*: API-based services to deliver and receive SMS messages.
 
