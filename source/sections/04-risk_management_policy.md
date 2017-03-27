@@ -22,7 +22,7 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
 2. Risk analysis and risk management are recognized as important components of Cloudticity's corporate compliance program and information security program in accordance with the Risk Analysis and Risk Management implementation specifications within the Security Management standard and the evaluation standards set forth in the HIPAA Security Rule, 45 CFR 164.308(a)(1)(ii)(A), 164.308(a)(1)(ii)(B), 164.308(a)(1)(i), and 164.308(a)(8).
    1. Risk assessments are done throughout product life cycles:
    2. Before the integration of new system technologies and before changes are made to Cloudticity physical safeguards; and
-      * These changes do not include routine updates to existing systems, deployments of new systems created based on previously configured systems, deployments of new customers, or new code developed for operations and management of the Cloudticity Oxygen Managed Services Platform.
+      * These changes do not include routine updates to existing systems, deployments of new systems created based on previously configured systems, deployments of new customers, or new code developed for operations and management of the Cloudticity Oxygen managed services platform.
    3. While making changes to Cloudticity physical equipment and facilities that introduce new, untested configurations.
    4. Cloudticity performs periodic technical and non-technical assessments of the security rule requirements as well as in response to environmental or operational changes affecting the security of ePHI.
 3. Cloudticity implements security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to:
@@ -35,7 +35,7 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
 6. The implementation, execution, and maintenance of the information security risk analysis and risk management process is the responsibility of Cloudticity's Security Officer (or other designated employee), and the identified Risk Management Team.
 7. All risk management efforts, including decisions made on what controls to put in place as well as those to not put into place, are documented and the documentation is maintained for six years.
 8. The details of the Risk Management Process, including risk assessment, discovery, and mitigation, are outlined in detail below. The process is tracked, measured, and monitored using the following procedures:
-  1. The Security Officer or the Privacy Officer initiates the Risk Management Procedures by creating a task in the Teamwork project: Compliance Review Activity (CRA).
+  1. The Security Officer or the Privacy Officer initiates the Risk Management Procedures by creating a task (using a template) in the Teamwork project: Compliance Review Activity (CRA).
   2. The Security Officer or the Privacy Officer is assigned to carry out the Risk Management Procedures.
   3. All findings are documented in an approved spreadsheet that is linked to the task.
   4. Once the Risk Management Procedures are complete, along with corresponding documentation, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
@@ -135,9 +135,8 @@ The two principle components of the risk management process - risk assessment an
 
 * Scheduled Basis – an overall risk assessment of Cloudticity's information system infrastructure will be conducted annually. The assessment process should be completed in a timely fashion so that risk mitigation strategies can be determined and included in the corporate budgeting process.
 * Throughout a System's Development Life Cycle – from the time that a need for a new, untested information system configuration and/or application is identified through the time it is disposed of, ongoing assessments of the potential threats to a system and its vulnerabilities should be undertaken as a part of the maintenance of the system.
-* As Needed - the Security Officer (or other designated employee) or Risk Management Team may call for a full or partial risk assessment in response to changes in business strategies, information technology, information sensitivity, threats, legal liabilities, or other significant factors that affect Cloudticity's Platform.
+* As Needed - the Security Officer (or other designated employee) or Risk Management Team may call for a full or partial risk assessment in response to changes in business strategies, information technology, information sensitivity, threats, legal liabilities, or other significant factors that affect Cloudticity's platform.
 
 ## 4.4 Process Documentation
 
 Maintain documentation of all risk assessment, risk management, and risk mitigation efforts for a minimum of six years.
-<!--se_discussion_list:{"HI4qNfMh8BlhEO1h4wv0dO4y":{"selectionStart":4251,"selectionEnd":4416,"commentList":[{"author":"Thomas Zinn","content":"Need a Risk Management Procedure teamwork task list."}],"discussionIndex":"HI4qNfMh8BlhEO1h4wv0dO4y"}}-->
