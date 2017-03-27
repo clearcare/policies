@@ -73,7 +73,7 @@ Transmission Security - 164.312(e)(1) | System Access and Data Management Polici
 
 | **Organizational Requirements** HIPAA Rule | Cloudticity Control | Inherited
 --- | --- | ---
-Business Associate Contracts or Other Arrangements - 164.314(a)(1)(i) | Business Associate Agreements and 3rd Parties Policies | Partially
+Business Associate Contracts or Other Arrangements - 164.314(a)(1)(i) | Business Associate Agreements and 3rd Party Policy | Partially
 
 | **Policies and Procedures and Documentation Requirements** HIPAA Rule | Cloudticity Control | Inherited
 --- | --- | ---

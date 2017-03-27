@@ -1,6 +1,6 @@
 # 15. IDS Policy
 
-In order to preserve the integrity of data that Cloudticity stores, processes, or transmits for customers, Cloudticity implements strong intrusion detection tools and policies to proactively track and retroactively investigate unauthorized access. Cloudticity currently utilizes [TMDS](https://www.trendmicro.com) to track file system integrity, monitor log data, and detect rootkit access.
+In order to preserve the integrity of data that Cloudticity stores, processes, or transmits for customers, Cloudticity implements strong intrusion detection tools and policies to proactively track and retroactively investigate unauthorized access. Cloudticity currently utilizes [TMDS](https://www.trendmicro.com) to track file system integrity, monitor log data, detect rootkit access, provide intrusion detection and prevention, and provides anti-malware functions.
 
 ## 15.1 Applicable Standards
 
@@ -22,4 +22,3 @@ In order to preserve the integrity of data that Cloudticity stores, processes, o
 4. Automatic monitoring is done to identify patterns that might signify the lack of availability of certain services and systems (DoS attacks).
 5. Cloudticity firewalls monitor all incoming traffic to detect potential denial of service attacks. Suspected attack sources are blocked automatically. Additionally, our hosting provider actively monitors its network to detect denial of services attacks.
 6. All new firewall rules and configuration changes are tested before being pushed into production. All firewall and router rules are reviewed every quarter.
-7. Cloudticity utilizes redundant firewall on network perimeters.
