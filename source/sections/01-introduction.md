@@ -8,13 +8,13 @@ Cloudticity provides secure and compliant cloud-based software. This hosted soft
 
 PaaS customers utilize hosted software and infrastructure through Cloudticity to deploy, host, and scale custom developed applications and configured databases. These customers are deployed onto compliant resources run on systems secured and managed by Cloudticity. Cloudticity does not have insight or access into application level data of PaaS customers and, as such, does not have the ability to secure or manage risk associated with application level vulnerabilities and security weaknesses. Cloudticity makes every effort to reduce the risk of unauthorized disclosure, access, and/or breach of PaaS customer data through network (firewalls, dedicated IP spaces, etc) and server settings (encryption at rest and in transit, TMDS throughout the platform, etc).
 
-PaaS customers can opt for a list of services from Cloudticity, which include Backup Service, Logging Service, IDS/IPS Service, and Disaster Recovery Service. Some of these services are not standard and PaaS customers must sign up for them in order for Cloudticity to manage these areas of security and compliance.
+PaaS customers can opt for a list of services from Cloudticity, which include custom development, backup creation/removal, IDS/IPS, and disaster recovery. Some of these services are not standard and PaaS customers must sign up for them in order for Cloudticity to manage these areas of security and compliance.
 
 ## 1.2 Platform Add-ons
 
-Add-ons are compliant services that are offered as part of the Cloudticity Oxygen Platform. These services currently include Monitoring as a Service (MaaS) and Security as a Service (SaaS). With add-ons, Cloudticity has access to data models and manages all application level configurations and security.
+Add-ons are compliant services that are offered as part of the Cloudticity Oxygen platform. These services currently include Monitoring as a Service (MaaS) and Security as a Service (SaaS). With add-ons, Cloudticity has access to data models and manages all application level configurations and security.
 
-In the future there may be 3rd party add-on services available as part of the Cloudticity Oxygen Managed Services Platform. These 3rd party, or Partner, services will be fully reviewed by Cloudticity to assure they do not have a negative impact on Cloudticity's information security and compliance posture.
+In the future there may be 3rd party add-on services available as part of the Cloudticity Oxygen managed services platform. These 3rd party, or Partner, services will be fully reviewed by Cloudticity to assure they do not have a negative impact on Cloudticity's information security and compliance posture.
 
 ## 1.3 Compliance Inheritance
 
@@ -30,11 +30,11 @@ Mappings of HIPAA Rules to Cloudticity controls and a mapping of what rules are 
 
 ## 1.4 Cloudticity Organizational Concepts
 
-The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of OpenVPN firewalls, Wordpress web servers, SQL Server database servers, Chef configuration management servers, Trend Micro IDS/IPS services, and developer tool servers running on Linux and Windows Server virtual machines.
+The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of OpenVPN firewalls, Wordpress web servers, SQL Server database servers, Chef configuration management servers, Trend Micro IDS/IPS servers, and developer tool servers running on Linux and Windows Server virtual machines.
 
-Within the Cloudticity Oxygen Managed Services Platform on AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting databases, APIs, log servers, etc. Cloudticity assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
+Within the Cloudticity Oxygen managed services platform on AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting databases, APIs, log servers, etc. Cloudticity assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
 
-In the case of PaaS customers, it is the responsibility of the customer to restrict, secure, and assure the privacy of all ePHI data at the Application Level, as this is not under the control or purview of Cloudticity.
+In the case of PaaS customers, it is the responsibility of the customer to restrict, secure, and assure the privacy of all ePHI data at the application level, as this is not under the control or purview of Cloudticity.
 
 The data and network segmentation mechanism differs depending on the primitives offered by the underlying cloud provider infrastructure:
 
@@ -57,10 +57,9 @@ The following process is used to request audit reports:
 1. Email is sent to support@cloudticity.com. In the email, please specify the type of report being requested and any required timelines for the report.
 2. Upon receipt of the email, a Zendesk ticket with the details of the request will be automatically created and assigned to the Cloudticity Security Officer or Privacy Officer. Zendesk is a ticket management application used to track request status and outcomes.
 3. Cloudticity will confirm if a current NDA is in place with the party requesting the audit report. If there is no NDA in place, Cloudticity will send one for execution.
-4. Once it has been confirmed that an NDA is executed, the Cloudticity Security Officer or Privacy Officer must Approve or Reject the request. If the request is rejected, Cloudticity will notify the requesting party that we cannot share the requested report and solve the Zendesk ticket.
+4. Once it has been confirmed that an NDA is executed, the Cloudticity Security Officer or Privacy Officer must approve or reject the request. If the request is rejected, Cloudticity will notify the requesting party that we cannot share the requested report and solve the Zendesk ticket.
 4. If the request is approved, Cloudticity will send the customer the requested audit report and solve the Zendesk ticket.
 
 ## 1.6 Version Control
 
 Refer to the GitHub repository at [https://github.com/cloudticity/policies/](https://github.com/cloudticity/policies/) for the full version history of these policies.
-<!--se_discussion_list:{"G8YQxIPJH7La8QjajkwMlX85":{"selectionStart":1997,"selectionEnd":2311,"commentList":[{"author":"Thomas Zinn","content":"@gerry Is this statement correct that customers can opt for a list of services?"}],"discussionIndex":"G8YQxIPJH7La8QjajkwMlX85"}}-->
