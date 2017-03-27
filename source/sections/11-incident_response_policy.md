@@ -56,17 +56,17 @@ Cloudticity employees must report any unauthorized or suspicious activity seen o
    1. Direct report to management, the Security Officer, Privacy Officer, or other;
    2. Email;
    3. Phone call;
-   4. Online incident response form located [here](https://docs.google.com/a/catalyze.io/forms/d/1Hn4di9Jdw5JT8vISMh6tVUnh94VpeHucell7Ca4fKTo/viewform);
-   5. Secure Chat.
-   6. Anonymously through workforce members desired channels.
-2. The individual receiving the report facilitates completion of an [Incident Identification form](sections/IH-Identification.pdf) and notifies the Security Officer (if not already done).
-3. The Security Officer determines if the issue is a Event, Precursor, Indication, or Incident.
+   4. Secure Chat.
+   5. Anonymously through workforce members desired channels.
+   6. Through automated intrusion detection/prevention systems and instance monitoring that is integrated with Cloudticity's ticket management system.
+2. If an individual receives the report, they submit a Zendesk ticket on behalf of the reporter and notify the Security Officer (if not already done).
+3. The Security Officer determines if the issue is an Event, Precursor, Indication, or Incident.
    1. If the issue is an event, indication, or precursor the Security Officer forwards it to the appropriate resource for resolution.
       1. Non-Technical Event (minor infringement): the Security Officer completes a [SIR Form](sections/sir-form.doc) and investigates the incident.
       2. Technical Event: Assign the issue to an IT resource for resolution. This resource may also be a contractor or outsourced technical resource, in the event of a small office or lack of expertise in the area.
    2. If the issue is a security incident the Security Officer activates the Security Incident Response Team (SIRT) and notifies senior management.
-       1. If a non-technical security incident is discovered the SIRT completes the investigation, implements preventative measures, and resolves the security incident.
-       2. Once the investigation is completed, progress to Phase V, Follow-up.
+       1. If a non-technical security incident is discovered, the SIRT completes the investigation, implements preventative measures, and resolves the security incident.
+       2. Once the investigation is complete, progress to Phase V, Follow-up.
        3. If the issue is a technical security incident, commence to Phase II: Containment.
        4. The Containment, Eradication, and Recovery Phases are highly technical. It is important to have them completed by a highly qualified technical security resource with oversight by the SIRT team.
        5. Each individual on the SIRT and the technical security resource document all measures taken during each phase, including the start and end times of all efforts.
