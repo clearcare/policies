@@ -1,6 +1,6 @@
 # 7. Systems Access Policy
 
-Access to Cloudticity systems and applications is limited for all users, including but not limited to workforce members, volunteers, business associates, contracted providers, consultants, and any other entity, and is allowable only on a minimum necessary basis. All users are responsible for reporting an incident of unauthorized use or access to Cloudticity's information systems. These safeguards have been established to address the HIPAA Security regulations including the following:
+Access to Cloudticity systems and applications is limited for all users, including but not limited to workforce members, volunteers, business associates, contracted providers, consultants, and any other entity, and is allowable only on a least privilege basis. All users are responsible for reporting an incident of unauthorized use or access to Cloudticity's information systems. These safeguards have been established to address the HIPAA Security regulations including the following:
 
 ## 7.1 Applicable Standards
 
@@ -36,7 +36,7 @@ Access to Cloudticity systems and applications is limited for all users, includi
 
 ## 7.2 Access Establishment and Modification
 
-1. Requests for access to the Cloudticity Oxygen Managed Services Platform systems and applications are made during the employee onboarding process or formally using the following process:
+1. Requests for access to the Cloudticity Oxygen managed services platform systems and applications are made during the employee onboarding process or formally using the following process:
   1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork project: Compliance Review Activity (CRA).
      * User identities must be verified prior to granting access to new accounts.
      * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
@@ -54,7 +54,7 @@ Access to Cloudticity systems and applications is limited for all users, includi
    1. The Security Officer initiates the review of user access by creating a task in the Teamwork project: Compliance Review Activity (CRA).
    2. The Security Officer, or a Privacy Officer, is assigned to review levels of access for each Cloudticity workforce member.
    3. If user access is found during review that is not in line with the least privilege principle, the process below is used to modify user access and notify the user of access changes. Once those steps are completed, the access is then reviewed again.
-   4. Once the review is completed, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
+   4. Once the review is complete, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
    5. If the task is approved, the Security Officer then marks the task as Complete, adding any pertinent notes required.
    6. Review of user access is monitored on a quarterly basis using Teamwork reporting to assess compliance with above policy.
 5. Any Cloudticity workforce member can request change of access using the process outlined in [§7.2](07-systems_access_policy.md#72-access-establishment-and-modification).
@@ -64,7 +64,7 @@ Access to Cloudticity systems and applications is limited for all users, includi
    * Accounts that are inactive for over 90 days are removed.
 8. In the case of non-personal information, such as generic educational content, identification and authentication may not be required. This is the responsibility of Cloudticity customers to define, and not Cloudticity.
 9. Privileged users must first access systems using standard, unique user accounts before switching to privileged users and performing privileged tasks.
-   * For production systems, this is enforced by creating non-privileged user accounts that must invoke `sudo` to perform privileged tasks.
+   * For production systems, this is enforced by non-privileged user accounts that must invoke `sudo` to perform privileged tasks.
    * Rights for privileged accounts are granted by the Security Officer using the process outlined in [§7.2](07-systems_access_policy.md#72-access-establishment-and-modification).
 10. All application to application communication using service accounts is restricted and not permitted unless absolutely needed. Automated tools are used to limit account access across applications and systems.
 11. Generic accounts are not allowed on Cloudticity systems.
