@@ -26,7 +26,7 @@ The Privacy Officer is responsible for assisting with compliance and security tr
 3. Manage relationships with customers and partners as those relationships affect security and compliance of ePHI.
 4. Assist Security Officer as needed.
 
-The current Cloudticity Privacy Officer is <Privacy Officer> ([<first name>@cloudticity.com](mailto:<first name>@cloudticity.com)).
+The current Cloudticity Privacy Officer is Nicole Chaika ([nicole@cloudticity.com](mailto:nicole@cloudticity.com)).
 
 ### 5.2.1 Workforce Training Responsibilities
 
