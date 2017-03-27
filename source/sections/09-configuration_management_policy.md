@@ -1,6 +1,6 @@
 # 9. Configuration Management Policy
 
-Cloudticity standardizes and automates configuration management through the use of Chef/userdata scripts as well as documentation of all changes to production systems and networks. Chef and userdata automatically configure all Cloudticity systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
+Cloudticity standardizes and automates configuration management through the use of Chef/userdata scripts as well as documentation of all changes to production systems and networks. Chef and userdata scripts automatically configure all Cloudticity systems according to established and tested policies, and are used as part of our Disaster Recovery plan and process.
 
 ## 9.1 Applicable Standards
 
@@ -20,16 +20,14 @@ Cloudticity standardizes and automates configuration management through the use 
 3. All changes to production systems, network devices, and firewalls are approved by the Cloudticity CTO before they are implemented to assure they comply with business and security requirements.
 4. All changes to production systems are tested before they are implemented in production.
 5. Implementation of approved changes are only performed by authorized personnel.
-6. Tooling to generate an up-to-date inventory of systems, including corresponding architecture diagrams for related products and services, is hosted on GitLab.
-   * All systems are categorized as production and utility to differentiate based on criticality.
-   * The Security Officer maintains scripts to generate inventory lists on demand using APIs provided by each cloud provider.
-   * These scripts are used to generate the diagrams and asset lists required by the Risk Assessment phase of Cloudticity's Risk Management procedures ([§4.3.1](#4.3-risk-management-procedures)).
-   * After every use of these scripts, the Security Officer will verify their accuracy by reconciling their output with recent changes to production systems. The Security Officer will address any discrepancies immediately with changes to the scripts.
+6. Tooling to generate an up-to-date inventory of systems is located in Cloudcheckr.
+   * All systems are labelled using tags to differentiate resources based on criticality.
+   * Cloudcheckr is used to generate the inventory lists and asset lists required by the Risk Assessment phase of Cloudticity's Risk Management procedures ([§4.3.1](04-risk_management_policy.md#431-risk-assessment)).
 7. All frontend functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers or containers.
 8. All software and systems are tested using unit tests and end to end tests.
 9. All committed code is reviewed using pull requests to assure software code quality and proactively detect potential security issues in development.
 10. Cloudticity utilizes development and staging environments that mirror production to assure proper function.
-11. Cloudticity also deploys environments locally using Vagrant to assure functionality before moving to staging or production.
+11. Cloudticity also deploys environments locally using the Serverless framework to assure functionality before moving to staging or production.
 12. All formal change requests require unique ID and authentication.
 13. Cloudticity uses the [Security Technical Implementation Guides (STIGs)](http://iase.disa.mil/stigs/) published by the Defense Information Systems Agency as a baseline for hardening systems.
     * Windows-based systems use a baseline Active Directory group policy configuration in conjunction with the Windows Server 2012 STIG.
@@ -38,24 +36,21 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ## 9.3 Provisioning Production Systems
 
-1. Before provisioning any systems, ops team members must file a request in the Zendesk Deployment Ticket (DT) project.
-   * Zendesk access requires authenticated users.
-   * The CTO grants access to the Zendesk DT project following the procedures covered in the [Access Establishment and Modification section](#7.2-access-establishment-and-modification).
-2. The VP of Engineering or CTO must approve the provisioning request before any new system can be provisioned.
+1. Before provisioning any systems, ops team members must have an assigned task in an active project that requires resource provisioning.
+   * Teamwork access requires authenticated users.
+   * The CTO grants access to Teamwork following the procedures covered in the [Access Establishment and Modification section](07-systems_access_policy.md#72-access-establishment-and-modification).
+2. The CTO must approve the provisioning request before any new system can be provisioned.
 3. Once provisioning has been approved, the ops team member must configure the new system according to the standard baseline chosen for the system's role.
-   * For Linux systems, this means adding the appropriate changes to the userdata configuration file and running an `update` operation on product or resource.
-   * For Windows systems, this means adding the appropriate roles to the system's Chef profile and forcing a Chef run.
-4. If the system will be used to house production data (ePHI), the ops team member must add an encrypted block data volume to the VM during provisioning.
-   * For systems on AWS, the ops team member must add an encrypted Elastic Block Storage (EBS) volume.
-   * For systems on other cloud providers, the ops team member must add a block data volume and set up OS-level data encryption using userdata or Chef.
+   * For instance configuration, this means adding the appropriate changes to the userdata scripts and running an `update` operation on the product or resource.
+   * For application configuration, this means adding the appropriate changes to the userdata scripts and running an `update` operation on the product or resource or adding the appropriate roles to the system's Chef profile and forcing a Chef run.
+4. If the system will be used to house production data (ePHI), the ops team member must add an encrypted Elastic Block Storage (EBS) volume to the VM during provisioning.
 5. Once the system has been provisioned, the ops team member must contact the security team to inspect the new system. A member of the security team will verify that the secure baseline has been applied to the new system, including (but not limited to) verifying the following items:
    * Removal of default users used during provisioning.
    * Network configuration for system.
    * Data volume encryption settings.
    * Intrusion detection and virus scanning software installed.
    * All items listed below in the operating system-specific subsections below.
-6. Once the security team member has verified the new system is correctly configured, the team member must add that system to the Nessus security scanner configuration.
-7. The new system may be rotated into production once the CTO verifies all the provisioning steps listed above have been correctly followed and has marked the task with the `Approved` state.
+6. The new system may be rotated into production once the CTO verifies all the provisioning steps listed above have been correctly followed and has marked the task as Complete.
 
 ### 9.3.1 Provisioning Linux Systems
 
@@ -64,55 +59,38 @@ Cloudticity standardizes and automates configuration management through the use 
    * Stopping and disabling any unnecessary OS services.
    * Installing and configuring the TMDS agent.
    * Installing and configuring the NTP daemon, including ensuring that modifying system time cannot be performed by unprivileged users.
-   * Configuring authentication to the centralized LDAP servers.
-   * Configuring audit logging as described in the [Auditing Policy section](#8.-auditing-policy).
+   * Configuring audit logging as described in [§8](08-auditing_policy.md#82-auditing-policies).
 2. Any additional states applied to the Linux system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
 
 ### 9.3.2 Provisioning Windows Systems
 
-1. Windows systems have their baseline security configuration applied via the combination of Group Policy settings and Chef recipes. These baseline settings cover:
-   * Joining the Windows Domain Controller and applying the Active Directory Group Policy configuration.
+1. Windows systems have their baseline security configuration applied via userdata scripts or Chef recipes. These baseline settings cover:
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
    * Installing and configuring the TMDS agent.
    * Configuring the system clock, including ensuring that modifying system time cannot be performed by unprivileged users.
-   * Configuring audit logging as described in the [Auditing Policy section](#8.-auditing-policy).
+   * Configuring audit logging as described in [§8](08-auditing_policy.md#82-auditing-policies).
 2. Any additional states applied to the Windows system must be clearly documented by the ops team member in the DT request by specifying the purpose of the new system.
 
 ### 9.3.3 Provisioning Management Systems
 
-1. Provisioning management systems such salt servers, LDAP servers, or VPN appliances follows the same procedure as provisioning a production system.
-2. Provisioning the first userdata server for a production pod requires bootstrapping userdata. The VP of Engineering will oversee provisioning a new userdata server.
-   * Once the userdata server has been bootstrapped, the ops team member will apply the baseline configuration to the userdata server by performing a `highstate` operation as usual.
-3. Critical infrastructure services such as logging, monitoring, LDAP servers, or Windows Domain Controllers must be configured with appropriate userdata states.
-   * These userdata states have been approved by the VP of Engineering and CTO to be in accordance with all Cloudticity policies, including setting appropriate:
-     * Audit logging requirements.
-     * Password size, strength, and expiration requirements.
-     * Transmission encryption requirements.
-4. Critical infrastruture roles applied to new systems must be clearly documented by the ops team member in the DT request.
+1. Provisioning management systems such salt servers, LDAP servers, or VPN appliances follows the same procedure as [provisioning a production system](09-configuration_management_policy.md#93-provisioning-production-systems).
 
 ## 9.4 Changing Existing Systems
 
 1. Subsequent changes to already-provisioned systems are unconditionally handled by one of the following methods:
-   * Changes to userdata states or pillar values.
+   * Changes to userdata scripts.
    * Changes to Chef recipes.
    * For configuration changes that cannot be handled by Chef or userdata, a runbook describing exactly what changes will be made and by whom.
 2. Configuration changes to Chef recipes or userdata states must be initiated by creating a Merge Request in GitLab.
    * The ops team member will create a feature branch and make their changes on that branch.
-   * The ops team member must test their configuration change locally when possible, or on a development and/or staging sandbox otherwise.
+   * The ops team member must test their configuration change locally when possible, or otherwise on a development and/or staging sandbox.
    * At least one other ops team member must review the Chef or userdata change before merging the change into the main branch.
-3. In all cases, before rolling out the change to production, the ops team member must file a task in the DT project describing the change. This Issue must link to the reviewed Merge Request and/or include a link to the runbook.
-4. Once the request has been approved by the CTO, the ops team member may roll out the change into production environments.
+3. Once the request has been approved by the CTO, the ops team member may roll out the change into production environments.
 
 ## 9.5 Patch Management Procedures
 
 1. Cloudticity uses automated tooling to ensure systems are up-to-date with the latest security patches.
-2. On Ubuntu Linux systems, the unattended-upgrades tool is used to apply security patches in phases.
-   * The security team maintains a mirrored snapshot of security patches from the upstream OS vendor. This mirror is synchronized bi-weekly and applied to development systems nightly.
-   * If the development systems function properly after the two-week testing period, the security team will promote that snapshot into the mirror used by all staging systems. These patches will be applied to all staging systems during the next nightly patch run.
-   * If the staging systems function properly after the two-week testing period, the security team will promote that snapshot into the mirror used by all production systems. These patches will be applied to all production systems during the next nightly patch run.
-   * Patches for critical kernel security vulnerabilities may be applied to production systems using hot-patching tools at the discretion of the Security Officer. These patches must follow the same phased testing process used for non-kernel security patches; this process may be expedited for severe vulnerabilities.
-3. On Windows systems, the baseline Group Policy setting configures Windows Update to implement the patching policy.
 
 ## 9.6 Software Development Procedures
 
@@ -122,8 +100,8 @@ Cloudticity standardizes and automates configuration management through the use 
 2. Developers are strongly encouraged to follow the [commit message conventions suggested by GitHub](https://github.com/blog/926-shiny-new-commit-styles).
    * Commit messages should be wrapped to 72 characters.
    * Commit messages should be written in the present tense. This convention matches up with commit messages generated by commands like git merge and git revert.
-3. Once the feature and corresponding tests are complete, a pull request will be created using the GitHub/GitLab web interface. The pull request should indicate which feature or defect is being addressed and should provide a high-level description of the changes made.
-4. Code reviews are performed as part of the pull request procedure. Once a change is ready for review, the author(s) will notify other engineers using an appropriate mechanism, typically via an `@channel` message in Slack.
+3. Once the feature and corresponding tests are complete, a pull request will be created using the GitHub web interface. The pull request should indicate which feature or defect is being addressed and should provide a high-level description of the changes made.
+4. Code reviews are performed as part of the pull request procedure. Once a change is ready for review, the author(s) will notify other engineers using an appropriate mechanism, typically via an `@here` message in Slack.
    * Other engineers will review the changes, using the guidelines above.
    * Engineers should note all potential issues with the code; it is the responsibility of the author(s) to address those issues or explain why they are not applicable.
 5. If the feature or defect interacts with ePHI, or controls access to data potentially containing ePHI, the code changes must be reviewed by the Security Officer before the feature is marked as complete.
@@ -133,4 +111,4 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ## 9.7 Software Release Procedures
 
-1. Software releases are treated as changes to existing systems and thus follow the procedure described in [§9.4](#9.4-changing-existing-systems).
+1. Software releases are treated as changes to existing systems and thus follow the procedure described in [§9.4](09-configuration_management_policy.md#94-changing-existing-systems).
