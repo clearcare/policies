@@ -1,8 +1,6 @@
 # 10. Facility Access Policy
 
-Cloudticity works with Subcontractors to assure restriction of physical access to systems used as part of the Cloudticity Oxygen Managed Services Platform. Cloudticity and its Subcontractors control access to the physical buildings/facilities that house these systems/applications, or in which Cloudticity workforce members operate, in accordance to the HIPAA Security Rule 164.310 and its implementation specifications. Physical Access to all of Cloudticity facilities is limited to only those authorized in this policy. In an effort to safeguard ePHi from unauthorized access, tampering, and theft, access is allowed to areas only to those persons authorized to be in them and with escorts for unauthorized persons. All workforce members are responsible for reporting an incident of unauthorized visitor and/or unauthorized access to Cloudticity's facility.
-
-Of note, Cloudticity does not have ready access to ePHI, it provides cloud-based, compliant infrastructure to covered entities and business associates. Cloudticity does not physically house any systems used by its Platform in Cloudticity facilities. Physical security of our Platform servers is outlined [in §1.4](#1.4-cloudticity-organizational-concepts).
+Cloudticity was born in the cloud, and has never been saddled with physical infrastructure. From the beginning we decided to focus on Amazon Web Services (AWS). Of note, Cloudticity does not have ready access to ePHI; it provides cloud-based, compliant infrastructure to covered entities and business associates. Cloudticity does not physically house any systems used by its platform in Cloudticity facilities. Physical security of our platform servers is outlined in [§1.4](01-introduction.md#14-cloudticity-organizational-concepts).
 
 ## 10.1 Applicable Standards
 
@@ -22,23 +20,17 @@ Of note, Cloudticity does not have ready access to ePHI, it provides cloud-based
 
 ## 10.2 Cloudticity-controlled Facility Access Policies
 
-1. Visitor and third party support access is recorded and supervised. All visitors are escorted.
-2. Repairs are documented and the documentation is retained.
-3. Fire extinguishers and detectors are installed according to applicable laws and regulations.
-4. Maintenance is controlled and conducted by authorized personnel in accordance with supplier-recommended intervals, insurance policies and the organizations maintenance program.
-5. Electronic and physical media containing covered information is securely destroyed (or the information securely removed) prior to disposal.
-6. The organization securely disposes media with sensitive information.
-7. Physical access is restricted using smart locks that track all access.
-   * Restricted areas and facilities are locked and when unattended (where feasible).
-   * Only authorized workforce members receive access to restricted areas (as determined by the Security Officer).
-   * Access and keys are revoked upon termination of workforce members.
-   * Workforce members must report a lost and/or stolen key(s) to the Security Officer.
-   * The Security Officer facilitates the changing of the lock(s) within 7 days of a key being reported lost/stolen
+1. With no physical offices, visitors and third party support access is unnecessary.
+2. With no physical offices, repairs and their documentation are unnecessary.
+3. Within our homes, fire extinguishers and detectors are installed according to applicable laws and regulations.
+4. With no physical offices, maintenance and its documentation is unnecessary.
+5. Cloudticity electronic and physical media does not contain covered information. If covered information is received on electronic and physical media, it will be securely destroyed (or the information securely removed) prior to disposal.
+6. The organization will securely dispose of media with sensitive information.
+7. With no physical offices, smart locks are unnecessary.
 8. Enforcement of Facility Access Policies
    * Report violations of this policy to the restricted area's department team leader, supervisor, manager, or director, or the Privacy Officer.
    * Workforce members in violation of this policy are subject to disciplinary action, up to and including termination.
-   * Visitors in violation of this policy are subject to loss of vendor privileges and/or termination of services from Cloudticity.
 9. Workstation Security
    * Workstations may only be accessed and utilized by authorized workforce members to complete assigned job/contract responsibilities.
-   * All workforce members are required to monitor workstations and report unauthorized users and/or unauthorized attempts to access systems/applications as per the Systems Access Policy.
+   * All workforce members are required to monitor workstations and report unauthorized users and/or unauthorized attempts to access systems/applications as per the [Systems Access Policy](07-systems_access_policy.md).
    * All workstations purchased by Cloudticity are the property of Cloudticity and are distributed to users by the company.

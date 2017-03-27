@@ -1,6 +1,6 @@
 # 6. Data Management Policy
 
-Cloudticity has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with Cloudticity Add-ons and for PaaS customers utilizing our Backup Service. This policy, and associated procedures for testing and restoring from backup data, do not apply to PaaS customers that do not choose Cloudticity Backup Service. The policy and procedures will assure that complete, accurate, retrievable, and tested backups are available for all systems used by Cloudticity.
+Cloudticity has procedures to create and maintain retrievable exact copies of electronic protected health information (ePHI) stored in conjunction with Cloudticity customers utilizing built-in AWS backup functionality. This policy, and associated procedures for testing and restoring from backup data, does not apply to customers that do not choose to utilize AWS backup functionality. The policy and procedures will assure that complete, accurate, retrievable, and tested backups are available for all systems used by Cloudticity.
 
 Data backup is an important part of the day-to-day operations of Cloudticity. To protect the confidentiality, integrity, and availability of ePHI, both for Cloudticity and Cloudticity customers, complete backups are done daily to assure that data remains available when it is needed and in case of disaster.
 
@@ -20,12 +20,11 @@ Violation of this policy and its procedures by workforce members may result in c
 
 ## 6.2 Backup Policy and Procedures
 
-1. Perform daily (minimum) snapshot backups of all systems that process, store, or transmit ePHI for Cloudticity customers, including PaaS customers that utilize the Cloudticity Backup Service.
-2. Cloudticity Ops Team, lead by VP of Engineering, is designated to be in charge of backups.
-3. Dev Ops Team members are trained and assigned to complete backups and manage the backup media.
-4. Document backups
+1. Perform daily (minimum) snapshot backups of all systems that process, store, or transmit ePHI for Cloudticity customers, including PaaS customers that utilize built-in AWS backup functionality.
+2. Cloudticity's Ops Team is designated to be in charge of backups.
+3. Ops Team members are trained and assigned to complete installation of automated backups.
+4. Backup descriptions are created as part of the Cloudticity Oxygen managed services platform automation. Description data includes, but is not limited to:
    * Name of the system
    * Date & time of backup
-   * Where backup stored (or to whom it was provided)
-5. Securely encrypt stored backups in a manner that protects them from loss or environmental damage.
-6. Test backups and document that files have been completely and accurately restored from the backup media.
+5. Stored backups are secured and encrypted in a manner that protects them from loss or environmental damage.
+6. Backups are tested and verification is completed to ensure that files have been completely and accurately restored from the backups.

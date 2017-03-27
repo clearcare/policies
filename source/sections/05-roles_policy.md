@@ -26,7 +26,7 @@ The Privacy Officer is responsible for assisting with compliance and security tr
 3. Manage relationships with customers and partners as those relationships affect security and compliance of ePHI.
 4. Assist Security Officer as needed.
 
-The current Cloudticity Privacy Officer is <Privacy Officer> ([<first name>@cloudticity.com](mailto:<first name>@cloudticity.com)).
+The current Cloudticity Privacy Officer is Nicole Chaika ([nicole@cloudticity.com](mailto:nicole@cloudticity.com)).
 
 ### 5.2.1 Workforce Training Responsibilities
 
@@ -69,12 +69,12 @@ The current Cloudticity Security Officer is Gerry Miller ([gerry@cloudticity.com
 
 ### 5.3.1 Organizational Responsibilities
 
-The Security Officer, in collaboration with the Privacy Officer, is responsible for facilitating the development, testing, implementation, training, and oversight of all activities pertaining to Cloudticity's efforts to be compliant with the HIPAA Security Regulations, HITRUST CSF, and any other security and compliance frameworks. The intent of the Security Officer Responsibilities is to maintain the confidentiality, integrity, and availability of ePHI. The Security Officer is appointed by and reports to the Board of Directors and the CEO.
+The Security Officer, in collaboration with the Privacy Officer, is responsible for facilitating the development, testing, implementation, training, and oversight of all activities pertaining to Cloudticity's efforts to be compliant with the HIPAA Security Regulations, HITRUST CSF, and any other security and compliance frameworks. The intent of the Security Officer Responsibilities is to maintain the confidentiality, integrity, and availability of ePHI. The Security Officer is appointed by and reports to the Board of Directors.
 
 These organizational responsibilities include, but are not limited to the following:
 
 1. Oversees and enforces all activities necessary to maintain compliance and verifies the activities are in alignment with the requirements.
-2. Helps to established and maintain written policies and procedures to comply with the Security rule and maintains them for six years from the date of creation or date it was last in effect, whichever is later.
+2. Helps to establish and maintain written policies and procedures to comply with the Security rule and maintains them for six years from the date of creation or date it was last in effect, whichever is later.
 3. Reviews and updates policies and procedures as necessary and appropriate to maintain compliance and maintains changes made for six years from the date of creation or date it was last in effect, whichever is later.
 4. Facilitates audits to validate compliance efforts throughout the organization.
 5. Documents all activities and assessments completed to maintain compliance and maintains documentation for six years from the date of creation or date it was last in effect, whichever is later.
@@ -85,33 +85,33 @@ These organizational responsibilities include, but are not limited to the follow
 10. Maintains a program promoting workforce members to report non-compliance with policies and procedures.
     * Promptly, properly, and consistently investigates and addresses reported violations and takes steps to prevent recurrence.
     * Applies consistent and appropriate sanctions against workforce members who fail to comply with the security policies and procedures of Cloudticity.
-    * Mitigates, to the extent practicable, any harmful effect known to Cloudticity of a use or disclosure of ePHI in violation of Cloudticity's policies and procedures, even if effect is the result of actions of Cloudticity business associates, customers, and/or partners.
-11. Reports security efforts and incidents to administration immediately upon discovery. Responsibilities in the case of a known ePHI breach are documented in the [Cloudticity Breach Policy](#12.-breach-policy).
+    * Mitigates, to the extent practicable, any harmful effect known to Cloudticity of a use or disclosure of ePHI in violation of Cloudticity's policies and procedures, even if the effect is the result of actions of Cloudticity business associates, customers, and/or partners.
+11. Reports security efforts and incidents to administration immediately upon discovery. Responsibilities in the case of a known ePHI breach are documented in the [Cloudticity Breach Policy](12-breach_policy.md).
 12. The Security Officer facilitates the communication of security updates and reminders to all workforce members to which it pertains. Examples of security updates and reminders include, but are not limited to:
     * Latest malicious software or virus alerts;
     * Cloudticity's requirement to report unauthorized attempts to access ePHI;
     * Changes in creating or changing passwords;
     * Additional security-focused training is provided to all workforce members by the Security Officer. This training includes, but is not limited to:
-    * Data backup plans;
-    * System auditing procedures;
-    * Redundancy procedures;
-    * Contingency plans;
-    * Virus protection;
-    * Patch management;
-    * Media Disposal and/or Re-use;
-    * Documentation requirements.
-13. The Security Officer works with the COO to ensure that any security objectives have appropriate consideration during the budgeting process.
+      * Data backup plans;
+      * System auditing procedures;
+      * Redundancy procedures;
+      * Contingency plans;
+      * Virus protection;
+      * Patch management;
+      * Media Disposal and/or Re-use;
+      * Documentation requirements.
+13. The Security Officer works with the CFO to ensure that any security objectives have appropriate consideration during the budgeting process.
     * In general, security and compliance are core to Cloudticity's technology and service offerings; in most cases this means security-related objectives cannot be split out to separate budget line items.
     * For cases that *can* be split out into discrete items, such as licenses for commercial tooling, the Security Officer follows Cloudticity's standard corporate budgeting process.
-      * At the beginning of every fiscal year, the COO contacts the Security Officer to plan for the upcoming year's expenses.
-      * The Security Officer works with the COO to forecast spending needs based on the previous year's level, along with changes for the upcoming year such as additional staff hires.
-      * During the year, if an unforeseen security-related expense arises that was not in the budget forecast, the Security Officer works with the COO to reallocate any resources as necessary to cover this expense.
+      * At the beginning of every fiscal year, the CFO contacts the Security Officer to plan for the upcoming year's expenses.
+      * The Security Officer works with the CFO to forecast spending needs based on the previous year's level, along with changes for the upcoming year such as additional staff hires.
+      * During the year, if an unforeseen security-related expense arises that was not in the budget forecast, the Security Officer works with the CFO to reallocate any resources as necessary to cover this expense.
 
 ### 5.3.2 Supervision of Workforce Responsibilities
 
 Although the Security Officer is responsible for implementing and overseeing all activities related to maintaining compliance, it is the responsibility of all workforce members (i.e. team leaders, supervisors, managers, directors, co-workers, etc.) to supervise all workforce members and any other user of Cloudticity's systems, applications, servers, workstations, etc. that contain ePHI.
 
-1. Monitor workstations and applications for unauthorized use, tampering, and theft and report non-compliance according to the Security Incident Response policy.
+1. Monitor workstations and applications for unauthorized use, tampering, and theft and report non-compliance according to the [Cloudticity Incident Response Policy](11-incident_response_policy.md).
 2. Assist the Security and Privacy Officers to ensure appropriate role-based access is provided to all users.
 3. Take all reasonable steps to hire, retain, and promote workforce members and provide access to users who comply with the Security regulation and Cloudticity's security policies and procedures.
 
