@@ -37,17 +37,17 @@ Access to Cloudticity systems and applications is limited for all users, includi
 ## 7.2 Access Establishment and Modification
 
 1. Requests for access to the Cloudticity Oxygen managed services platform systems and applications are made during the employee onboarding process or formally using the following process:
-  1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork project: Compliance Review Activity (CRA).
-     * User identities must be verified prior to granting access to new accounts.
-     * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
-     * For new accounts, the method used to verify the user's identity must be recorded on the task.
-  2. The Security Officer will grant access to systems as dictated by the employee's job title. If additional access is required outside of the minimum necessary to perform job functions, the requester must include a description of why the additional access is required as part of the access request.
-  3. Once the review is completed, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
-  4. If the task is approved, the Security Officer grants the necessary access and marks the task as Complete, adding any pertinent notes required.
-     * New accounts will be created with a temporary secure password that meets all requirements from [§7.12](07-systems_access_policy.md#712-password-management), which must be changed on the initial login.
-     * All password exchanges must occur over an authenticated channel.
-     * For production systems, access grants are accomplished by adding the appropriate user account to the corresponding LDAP group.
-     * For non-production systems, access grants are accomplished by leveraging the access control mechanisms built into those systems. Account management for non-production systems may be delegated to a Cloudticity employee at the discretion of the Security Officer.
+   1. The Cloudticity workforce member, or their manager, initiates the access request by creating a task in the Teamwork project: Compliance Review Activity (CRA).
+      * User identities must be verified prior to granting access to new accounts.
+      * Identity verification must be done in person where possible; for remote employees, identities must be verified over the phone.
+      * For new accounts, the method used to verify the user's identity must be recorded on the task.
+   2. The Security Officer will grant access to systems as dictated by the employee's job title. If additional access is required outside of the minimum necessary to perform job functions, the requester must include a description of why the additional access is required as part of the access request.
+   3. Once the review is completed, the Security Officer approves or rejects the task. If the task is rejected, it goes back for further review and documentation.
+   4. If the task is approved, the Security Officer grants the necessary access and marks the task as Complete, adding any pertinent notes required.
+      * New accounts will be created with a temporary secure password that meets all requirements from [§7.12](07-systems_access_policy.md#712-password-management), which must be changed on the initial login.
+      * All password exchanges must occur over an authenticated channel.
+      * For production systems, access grants are accomplished by adding the appropriate user account to the corresponding LDAP group.
+      * For non-production systems, access grants are accomplished by leveraging the access control mechanisms built into those systems. Account management for non-production systems may be delegated to a Cloudticity employee at the discretion of the Security Officer.
 2. Access is not granted until receipt, review, and approval by the Cloudticity Security Officer;
 3. The request for access is retained for future reference.
 4. All access to Cloudticity systems and services are reviewed and updated on a quarterly basis to assure proper authorizations are in place commensurate with job functions. The process for conducting reviews is outlined below:
@@ -96,7 +96,7 @@ Access to Cloudticity systems and applications is limited for all users, includi
 
 ## 7.6 Unique User Identification
 
-1. Access to the Cloudticity Oxygen Managed Services Platform systems and applications is controlled by requiring unique User Login IDs and passwords for each individual user and developer.
+1. Access to the Cloudticity Oxygen managed services platform systems and applications is controlled by requiring a unique user ID and password for each individual user and developer.
 2. Passwords requirements mandate strong password controls (see below).
 3. Passwords are not displayed at any time and are not transmitted or stored in plain text.
 4. Default accounts on all production systems, including root, are disabled.
