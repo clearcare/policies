@@ -111,7 +111,7 @@ Access to Cloudticity systems and applications is limited for all users, includi
 
 ## 7.8 Employee Workstation Use
 
-All workstations at Cloudticity are company owned laptops running Mac OSX, Windows, or Linux.
+All employee workstations are company owned laptops running Mac OSX, Windows, or Linux.
 
 1. Workstations may not be used to engage in any activity that is illegal or is in violation of organization's policies.
 2. Access may not be used for transmitting, retrieving, or storage of any communications of a discriminatory or harassing nature or materials that are obscene or "X-rated". Harassment of any kind is prohibited. No messages with derogatory or inflammatory remarks about an individual's race, age, disability, religion, national origin, physical attributes, sexual preference, or health condition shall be transmitted or maintained. No abusive, hostile, or offensive language is to be transmitted through organization's system.
@@ -119,6 +119,7 @@ All workstations at Cloudticity are company owned laptops running Mac OSX, Windo
 4. Users may not misrepresent, obscure, suppress, or replace another user's identity in transmitted or stored messages.
 5. Workstation hard drives will be encrypted using FileVault 2.0 or equivalent.
 6. All workstations have firewalls enabled to prevent unauthorized access unless explicitly granted.
+7. All workstations must have Trend Micro Worry-Free Business Security installed and running at all times.
 
 ## 7.9 Wireless Access Use
 

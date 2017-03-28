@@ -26,12 +26,12 @@ Cloudticity standardizes and automates configuration management through the use 
 7. All frontend functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers or containers.
 8. All software and systems are tested using unit tests and end to end tests.
 9. All committed code is reviewed using pull requests to assure software code quality and proactively detect potential security issues in development.
-10. Cloudticity utilizes development and staging environments that mirror production to assure proper function.
+10. Cloudticity utilizes, where appropriate, development and staging environments that mirror production to assure proper function.
 11. Cloudticity also deploys environments locally using the Serverless framework to assure functionality before moving to staging or production.
 12. All formal change requests require unique ID and authentication.
 13. Cloudticity uses the [Security Technical Implementation Guides (STIGs)](http://iase.disa.mil/stigs/) published by the Defense Information Systems Agency as a baseline for hardening systems.
-    * Windows-based systems use a baseline Active Directory group policy configuration in conjunction with the Windows Server 2012 STIG.
-    * Linux-based systems use a Red Hat Enterprise Linux STIG which has been adapted for Ubuntu and improved based on the results of subsequent vulnerability scans and risk assessments.
+    * Windows-based systems use a baseline configuration in conjunction with the Windows Server 2012 STIG.
+    * Linux-based systems use a Red Hat Enterprise Linux STIG.
 14. Clocks are continuously synchronized to an authoritative source across all systems using NTP or a platform-specific equivalent. Modifying time data on systems is restricted.
 
 ## 9.3 Provisioning Production Systems
@@ -44,12 +44,12 @@ Cloudticity standardizes and automates configuration management through the use 
    * For instance configuration, this means adding the appropriate changes to the userdata scripts and running an `update` operation on the product or resource.
    * For application configuration, this means adding the appropriate changes to the userdata scripts and running an `update` operation on the product or resource or adding the appropriate roles to the system's Chef profile and forcing a Chef run.
 4. If the system will be used to house production data (ePHI), the ops team member must add an encrypted Elastic Block Storage (EBS) volume to the VM during provisioning.
-5. Once the system has been provisioned, the ops team member must contact the security team to inspect the new system. A member of the security team will verify that the secure baseline has been applied to the new system, including (but not limited to) verifying the following items:
+5. Once the system has been provisioned, the ops team member must inspect, or have another workforce member inspect, the new system. Verification that the secure baseline has been applied to the new system, included (but is not limited to) verifying the following items:
    * Removal of default users used during provisioning.
    * Network configuration for system.
    * Data volume encryption settings.
    * Intrusion detection and virus scanning software installed.
-   * All items listed below in the operating system-specific subsections below.
+   * All items listed in the operating system-specific subsections.
 6. The new system may be rotated into production once the CTO verifies all the provisioning steps listed above have been correctly followed and has marked the task as Complete.
 
 ### 9.3.1 Provisioning Linux Systems
@@ -64,7 +64,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ### 9.3.2 Provisioning Windows Systems
 
-1. Windows systems have their baseline security configuration applied via userdata scripts or Chef recipes. These baseline settings cover:
+1. Windows systems have their baseline security configuration applied via userdata powershell scripts or Chef recipes. These baseline settings cover:
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
    * Installing and configuring the TMDS agent.
@@ -74,7 +74,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ### 9.3.3 Provisioning Management Systems
 
-1. Provisioning management systems such salt servers, LDAP servers, or VPN appliances follows the same procedure as [provisioning a production system](09-configuration_management_policy.md#93-provisioning-production-systems).
+1. Provisioning management systems such as LDAP servers or VPN appliances follows the same procedure as [provisioning a production system](09-configuration_management_policy.md#93-provisioning-production-systems).
 
 ## 9.4 Changing Existing Systems
 
@@ -82,7 +82,7 @@ Cloudticity standardizes and automates configuration management through the use 
    * Changes to userdata scripts.
    * Changes to Chef recipes.
    * For configuration changes that cannot be handled by Chef or userdata, a runbook describing exactly what changes will be made and by whom.
-2. Configuration changes to Chef recipes or userdata states must be initiated by creating a Merge Request in GitLab.
+2. Configuration changes to Chef recipes or userdata states must be initiated by creating a pull request in Github.
    * The ops team member will create a feature branch and make their changes on that branch.
    * The ops team member must test their configuration change locally when possible, or otherwise on a development and/or staging sandbox.
    * At least one other ops team member must review the Chef or userdata change before merging the change into the main branch.

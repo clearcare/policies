@@ -36,7 +36,7 @@
 
 * *Disclosure*: Disclosure means the release, transfer, provision of, access to, or divulging in any other manner of information outside the entity holding the information.
 
-* *Customers*: Contractually bound users of Cloudticity Oxygen Managed Services Platform.
+* *Customers*: Contractually bound users of Cloudticity Oxygen managed services platform.
 
 * *Electronic Protected Health Information (ePHI)*: Any individually identifiable health information protected by HIPAA that is transmitted by, processed in some way, or stored in electronic media.
 
@@ -75,7 +75,7 @@
 
 * *Organization*: For the purposes of this policy, the term "organization" shall mean Cloudticity.
 
-* *Partner*: Contractual bound 3rd party vendor with integration with the Cloudticity Oxygen Managed Services Platform. May offer Add-on services.
+* *Partner*: Contractual bound 3rd party vendor with integration with the Cloudticity Oxygen managed services platform. May offer Add-on services.
 
 * *Platform*: The overall technical environment of Cloudticity.
 

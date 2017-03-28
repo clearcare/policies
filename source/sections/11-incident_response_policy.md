@@ -4,7 +4,7 @@ Cloudticity implements an information security incident response process to cons
 
 The incident response process addresses:
 
-* Continuous monitoring of threats through intrusion detection systems (IDS) and other monitoring applications;
+* Continuous monitoring of threats through intrusion detection/prevention systems (IDS/IPS) and other monitoring applications;
 * Establishment of an information security incident response team;
 * Establishment of procedures to respond to media inquiries;
 * Establishment of clear procedures for identifying, responding, assessing, analyzing, and follow-up of information security incidents;
@@ -27,7 +27,7 @@ The incident response process addresses:
 
 ## 11.2 Incident Management Policies
 
-The Cloudticity incident response process follows the process recommended by [SANS](https://www.sans.org), an industry leader in security. Process flows are a direct representation of the SANS process which can be found in [this document](sections/incident-flowchart.pdf).
+The Cloudticity incident response process follows the process recommended by [SANS](https://www.sans.org), an industry leader in security. Process flows are a direct representation of the SANS process which can be found in [this document](incident-flowchart.pdf).
 
 Cloudticity's incident response classifies security-related events into the following categories:
 
@@ -62,16 +62,16 @@ Cloudticity employees must report any unauthorized or suspicious activity seen o
 2. If an individual receives the report, they submit a Zendesk ticket on behalf of the reporter and notify the Security Officer (if not already done).
 3. The Security Officer determines if the issue is an Event, Precursor, Indication, or Incident.
    1. If the issue is an event, indication, or precursor the Security Officer forwards it to the appropriate resource for resolution.
-      1. Non-Technical Event (minor infringement): the Security Officer completes a [SIR Form](sections/sir-form.doc) and investigates the incident.
+      1. Non-Technical Event (minor infringement): the Security Officer investigates the incident and adds necessary details to the ticket.
       2. Technical Event: Assign the issue to an IT resource for resolution. This resource may also be a contractor or outsourced technical resource, in the event of a small office or lack of expertise in the area.
-   2. If the issue is a security incident the Security Officer activates the Security Incident Response Team (SIRT) and notifies senior management.
+   2. If the issue is a security incident the Security Officer activates the Security Incident Response Team (SIRT).
        1. If a non-technical security incident is discovered, the SIRT completes the investigation, implements preventative measures, and resolves the security incident.
-       2. Once the investigation is complete, progress to Phase V, Follow-up.
-       3. If the issue is a technical security incident, commence to Phase II: Containment.
+       2. Once the investigation is complete, progress to [Phase V, Follow-up](11-incident_response_policy.md#1125-follow-up-phase-technical-and-non-technical).
+       3. If the issue is a technical security incident, commence to [Phase II: Containment](11-incident_response_policy.md#1122-containment-phase-technical).
        4. The Containment, Eradication, and Recovery Phases are highly technical. It is important to have them completed by a highly qualified technical security resource with oversight by the SIRT team.
        5. Each individual on the SIRT and the technical security resource document all measures taken during each phase, including the start and end times of all efforts.
-       6. The lead member of the SIRT team facilitates initiation of a [SIR Form](sections/sir-form.doc) or an [Incident Survey Form](sections/IH-Survey.pdf). The intent of the SIR form is to provide a summary of all events, efforts, and conclusions of each Phase of this policy and procedures.
-3. The Security Officer, Privacy Officer, or Cloudticity representative appointed notifies any affected customers and Partners. If no customers and Partners are affected, notification is at the discretion of the Security and Privacy Officer.
+       6. The lead member of the SIRT team facilitates initiation of a [SIR Form](sir-form.doc) or an [Incident Survey Form](IH-Survey.pdf). The intent of the SIR form is to provide a summary of all events, efforts, and conclusions of each Phase of this policy and procedures.
+3. The Security Officer, Privacy Officer, or Cloudticity representative appointed notifies any affected customers and partners. If no customers and partners are affected, notification is at the discretion of the Security and Privacy Officer.
 4. In the case of a threat identified, the Security Officer is to form a team to investigate and involve necessary resources, both internal to Cloudticity and potentially external.
 
 ### 11.2.2 Containment Phase (Technical)
@@ -88,12 +88,12 @@ In this Phase, Cloudticity's IT department attempts to contain the security inci
    5. Change the password(s) to the affected system(s).
    6. Determine whether it is safe to continue operations with the affect system(s).
    7. If it is safe, allow the system to continue to function;
-      1. Complete any documentation relative to the security incident on the [SIR Form](sections/sir-form.doc).
-      2. Move to Phase V, Follow-up.
-   8. If it is NOT safe to allow the system to continue operations, discontinue the system(s) operation and move to Phase III, Eradication.
+      1. Complete any documentation relative to the security incident on the [SIR Form](sir-form.doc).
+      2. Move to [Phase V, Follow-up](11-incident_response_policy.md#1125-follow-up-phase-technical-and-non-technical).
+   8. If it is NOT safe to allow the system to continue operations, discontinue the system(s) operation and move to [Phase III, Eradication](11-incident_response_policy.md#1123-eradication-phase-technical).
    9. The individual completing this phase provides written communication to the SIRT.
-4. Continuously apprise Senior Management of progress.
-5. Continue to notify affected customers and Partners with relevant updates as needed
+4. Continuously apprise senior management of progress.
+5. Continue to notify affected customers and partners with relevant updates as needed.
 
 ### 11.2.3 Eradication Phase (Technical)
 
@@ -106,36 +106,36 @@ The Eradication Phase represents the SIRT's effort to remove the cause, and the 
    3. Remediation ("fixing") any security issues within the affected system, such as removing unused services/general host hardening techniques.
 3. Conduct a detailed vulnerability assessment to verify all the holes/gaps that can be exploited have been addressed.
    1. If additional issues or symptoms are identified, take appropriate preventative measures to eliminate or minimize potential future compromises.
-4. Complete the [Eradication Form](sections/IH-Eradication.pdf).
+4. Complete the [Eradication Form](IH-Eradication.pdf).
 5. Update the documentation with the information learned from the vulnerability assessment, including the cause, symptoms, and the method used to fix the problem with the affected system(s).
-6. Apprise Senior Management of the progress.
-7. Continue to notify affected customers and Partners with relevant updates as needed.
-8. Move to Phase IV, Recovery.
+6. Apprise senior management of the progress.
+7. Continue to notify affected customers and partners with relevant updates as needed.
+8. Move to [Phase IV, Recovery](11-incident_response_policy.md#1124-recovery-phase-technical).
 
 ### 11.2.4 Recovery Phase (Technical)
 
 The Recovery Phase represents the SIRT's effort to restore the affected system(s) back to operation after the resulting security exposures, if any, have been corrected.
 
 1. The technical team determines if the affected system(s) have been changed in any way.
-   1. If they have, the technical team restores the system to its proper, intended functioning ("last known good").
+   1. If they have, the technical team restores the system to its proper, intended function ("last known good state").
    2. Once restored, the team validates that the system functions the way it was intended/had functioned in the past. This may require the involvement of the business unit that owns the affected system(s).
    3. If operation of the system(s) had been interrupted (i.e., the system(s) had been taken offline or dropped from the network while triaged), restart the restored and validated system(s) and monitor for behavior.
    4. If the system had not been changed in any way, but was taken offline (i.e., operations had been interrupted), restart the system and monitor for proper behavior.
-   5. Update the documentation with the detail that was determined during this phase.
-   6. Apprise Senior Management of progress.
-   7. Continue to notify affected customers and Partners with relevant updates as needed.
-   8. Move to Phase V, Follow-up.
+   5. Update documentation with the detail that was determined during this phase.
+   6. Apprise senior management of progress.
+   7. Continue to notify affected customers and partners with relevant updates as needed.
+   8. Move to [Phase V, Follow-up](11-incident_response_policy.md#1125-follow-up-phase-technical-and-non-technical).
 
 ### 11.2.5 Follow-up Phase (Technical and Non-Technical)
 
 The Follow-up Phase represents the review of the security incident to look for "lessons learned" and to determine whether the process that was taken could have been improved in any way. It is recommended all security incidents be reviewed shortly after resolution to determine where response could be improved. Timeframes may extend to one to two weeks post-incident.
 
 1. Responders to the security incident (SIRT Team and technical security resource) meet to review the documentation collected during the security incident.
-2. Create a "lessons learned" document and attach it to the completed [SIR Form](sections/sir-form.doc).
+2. Create a "lessons learned" document and attach it to the completed [SIR Form](sir-form.doc).
    1. Evaluate the cost and impact of the security incident to Cloudticity using the documents provided by the SIRT and the technical security resource.
    2. Determine what could be improved.
-   3. Communicate these findings to Senior Management for approval and for implementation of any recommendations made post-review of the security incident.
-   4. Carry out recommendations approved by Senior Management; sufficient budget, time and resources should be committed to this activity.
+   3. Communicate these findings to senior management for approval and for implementation of any recommendations made post-review of the security incident.
+   4. Carry out recommendations approved by senior management; sufficient budget, time and resources should be committed to this activity.
    5. Close the security incident.
 
 ### 11.2.6 Periodic Evaluation
@@ -148,4 +148,4 @@ Current members of the Cloudticity SIRT:
 
 * Security Officer
 * Privacy Officer
-* VP of Engineering
+* Senior AWS Engineer
