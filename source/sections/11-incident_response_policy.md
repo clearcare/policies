@@ -70,7 +70,7 @@ Cloudticity employees must report any unauthorized or suspicious activity seen o
        3. If the issue is a technical security incident, commence to [Phase II: Containment](11-incident_response_policy.md#1122-containment-phase-technical).
        4. The Containment, Eradication, and Recovery Phases are highly technical. It is important to have them completed by a highly qualified technical security resource with oversight by the SIRT team.
        5. Each individual on the SIRT and the technical security resource document all measures taken during each phase, including the start and end times of all efforts.
-       6. The lead member of the SIRT team facilitates initiation of a [SIR Form](sir-form.doc) or an [Incident Survey Form](IH-Survey.pdf). The intent of the SIR form is to provide a summary of all events, efforts, and conclusions of each Phase of this policy and procedures.
+       6. The lead member of the SIRT team facilitates initiation of a [SIR Form](sir-form.doc). The intent of the SIR form is to provide a summary of all events, efforts, and conclusions of each phase of this policy and procedures.
 3. The Security Officer, Privacy Officer, or Cloudticity representative appointed notifies any affected customers and partners. If no customers and partners are affected, notification is at the discretion of the Security and Privacy Officer.
 4. In the case of a threat identified, the Security Officer is to form a team to investigate and involve necessary resources, both internal to Cloudticity and potentially external.
 
@@ -106,7 +106,7 @@ The Eradication Phase represents the SIRT's effort to remove the cause, and the 
    3. Remediation ("fixing") any security issues within the affected system, such as removing unused services/general host hardening techniques.
 3. Conduct a detailed vulnerability assessment to verify all the holes/gaps that can be exploited have been addressed.
    1. If additional issues or symptoms are identified, take appropriate preventative measures to eliminate or minimize potential future compromises.
-4. Complete the [Eradication Form](IH-Eradication.pdf).
+4. Complete the eradication section of the [SIR Form](sir-form.doc).
 5. Update the documentation with the information learned from the vulnerability assessment, including the cause, symptoms, and the method used to fix the problem with the affected system(s).
 6. Apprise senior management of the progress.
 7. Continue to notify affected customers and partners with relevant updates as needed.
