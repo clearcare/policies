@@ -24,7 +24,7 @@ This policy establishes the scope, objectives, and procedures of Cloudticity's i
    2. Before the integration of new system technologies and before changes are made to Cloudticity physical safeguards; and
       * These changes do not include routine updates to existing systems, deployments of new systems created based on previously configured systems, deployments of new customers, or new code developed for operations and management of the Cloudticity Oxygen managed services platform.
    3. While making changes to Cloudticity physical equipment and facilities that introduce new, untested configurations.
-   4. Cloudticity performs periodic technical and non-technical assessments of the security rule requirements as well as in response to environmental or operational changes affecting the security of ePHI.
+   4. Cloudticity performs annual technical and non-technical assessments of the security rule requirements as well as in response to environmental or operational changes affecting the security of ePHI.
 3. Cloudticity implements security measures sufficient to reduce risks and vulnerabilities to a reasonable and appropriate level to:
    1. Ensure the confidentiality, integrity, and availability of all ePHI Cloudticity receives, maintains, processes, and/or transmits for its customers;
    2. Protect against any reasonably anticipated threats or hazards to the security or integrity of customer ePHI;

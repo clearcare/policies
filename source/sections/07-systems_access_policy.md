@@ -126,6 +126,9 @@ All employee workstations are company owned laptops running Mac OSX, Windows, or
 1. Cloudticity production systems are not accessible directly over wireless channels.
 2. Wireless access is disabled on all production systems.
 3. When accessing production systems via remote wireless connections, the same system access policies and procedures apply to wireless as all other connections, including wired.
+4. Cloudticity does not maintain wireless access points, however, wireless access points maintained by Cloudticity employees are configured with strong encryption (AES WPA2 at a minimum).
+5. Cloudticity does not maintain wireless access points, however, wireless access points maintained by Cloudticity employees have their vendor defaults changed prior to implementation.
+6. Cloudticity does not maintain wireless access points, however, wireless access points maintained by Cloudticity employees are in secure locations.
 
 ## 7.10 Employee Termination Procedures
 
@@ -148,8 +151,8 @@ Cloudticity does not use paper records for any sensitive information. Use of pap
 3. On all production systems and applications in the Cloudticity environment, password configurations are set to require:
    * a minimum length of 8 characters;
    * a mix of upper case characters, lower case characters, and numbers or special characters;
-   * a 180-day password expiration;
-   * prevention of password reuse using a history of the last 1 password;
+   * a 60-day password expiration;
+   * prevention of password reuse using a history of the last 6 password;
    * account lockout after 5 invalid attempts.
 4. All system and application passwords must be stored and transmitted securely.
    * Where possible, passwords should be stored in a hashed format using a salted cryptographic hash function (SHA-256 or equivalent).
