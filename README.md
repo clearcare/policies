@@ -1,6 +1,6 @@
 # Cloudticity HIPAA Compliance Policies
 
-HIPAA compliance is complicated, but it doesn't have to be. Cloudticity helps relieve the technical burden with our HIPAA-compliant cloud computing platform and solutions for healthcare.
+HIPAA compliance is complicated but it doesn't have to be. Cloudticity helps relieve the technical burden with our HIPAA-compliant cloud computing platform and solutions for healthcare.
 
 In an effort to make compliance as easy as possible for companies working with protected health information (PHI), we decided to open source our company policies.
 

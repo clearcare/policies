@@ -63,8 +63,9 @@ Access to Cloudticity systems and applications is limited for all users, includi
    * Accounts are reviewed every 90 days to assure temporary accounts are not left unnecessarily.
    * Accounts that are inactive for over 90 days are removed.
 8. In the case of non-personal information, such as generic educational content, identification and authentication may not be required. This is the responsibility of Cloudticity customers to define, and not Cloudticity.
-9. Privileged users must first access systems using standard, unique user accounts before switching to privileged users and performing privileged tasks.
-   * For production systems, this is enforced by non-privileged user accounts that must invoke `sudo` to perform privileged tasks.
+9. If operating systems are accessed directly, privileged users must first access systems using standard, unique user accounts before switching to privileged users and performing privileged tasks. For other production systems, user accounts are permission based and align directly with responsibilities.
+   * For Linux production systems, this is enforced by non-privileged user accounts that must invoke `sudo` to perform privileged tasks.
+   * For Windows production systems, this is enforced by default. Users must "Run as Administrator" to access a privileged powershell.
    * Rights for privileged accounts are granted by the Security Officer using the process outlined in [§7.2](07-systems_access_policy.md#72-access-establishment-and-modification).
 10. All application to application communication using service accounts is restricted and not permitted unless absolutely needed. Automated tools are used to limit account access across applications and systems.
 11. Generic accounts are not allowed on Cloudticity systems.
