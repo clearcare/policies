@@ -143,9 +143,7 @@ All employee workstations are company owned laptops running Mac OSX, Windows, or
 
 ## 7.11 Paper Records
 
-Cloudticity does not use paper records for any sensitive information. Use of paper for recording and storing sensitive data is against Cloudticity policies.
-
-The only acceptable exception to this policy is the use of paper to store recovery keys for FileVault, BitLocker, or the equivalent. In this case, the paper must be secured in an external, locked facility such as a bank safe deposit box.
+Cloudticity uses paper records to store recovery keys for FileVault, BitLocker, or the equivalent. The paper must be secured in a fireproof and locked environment. Use of paper for recording and storing other sensitive data is against Cloudticity policies.
 
 ## 7.12 Password Management
 
