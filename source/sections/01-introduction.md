@@ -30,7 +30,7 @@ Mappings of HIPAA Rules to Cloudticity controls and a mapping of what rules are 
 
 ## 1.4 Cloudticity Organizational Concepts
 
-The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of OpenVPN firewalls, Wordpress web servers, SQL Server database servers, Chef configuration management servers, Trend Micro IDS/IPS servers, and developer tool servers running on Linux and Windows Server virtual machines.
+The physical infrastructure environment is hosted at [Amazon Web Services](https://aws.amazon.com/) (AWS). The network components and supporting network infrastructure are contained within the AWS infrastructures and managed by AWS. Cloudticity does not have physical access into the network components. The Cloudticity environment consists of OpenVPN firewalls, Wordpress web servers, SQL Server and MySQL database servers, Chef configuration management servers, Trend Micro Deep Security Manager servers, and developer tool servers running on Linux and Windows Server virtual machines.
 
 Within the Cloudticity Oxygen managed services platform on AWS, all data transmission is encrypted and all hard drives are encrypted so data at rest is also encrypted; this applies to all servers - those hosting databases, APIs, log servers, etc. Cloudticity assumes all data *may* contain ePHI, even though our Risk Assessment does not indicate this is the case, and provides appropriate protections based on that assumption.
 
