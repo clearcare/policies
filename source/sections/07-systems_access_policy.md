@@ -149,11 +149,12 @@ Cloudticity uses paper records to store recovery keys for FileVault, BitLocker, 
 
 1. User IDs and passwords are used to control access to Cloudticity systems and may not be disclosed to anyone for any reason.
 2. Users may not allow anyone, for any reason, to have access to any information system using another user's unique user ID and password.
-3. On all production systems and applications in the Cloudticity environment, password configurations are set to require:
+3. On all production systems and applications in the Cloudticity environment where specific password settings are available, password configurations are set to require:
    * a minimum length of 8 characters;
    * a mix of upper case characters, lower case characters, and numbers or special characters;
-   * a 60-day password expiration;
-   * prevention of password reuse using a history of the last 6 password;
+   * at least a 60-day password expiration for priveleged accounts and at least 90-day password expiration for standard accounts;
+   * prevention of password reuse using a history of the last 6 passwords;
+      * Current exceptions: Google Apps and Trend Micro do not have these settings. Trend Micro Deep Security will have SAML support starting in version 10.1, at which time Cloudticity will federate TMDS to a consolidated source (Google/AWS/OneLogin)
    * account lockout after 5 invalid attempts.
 4. All system and application passwords must be stored and transmitted securely.
    * Where possible, passwords should be stored in a hashed format using a salted cryptographic hash function (SHA-256 or equivalent).
