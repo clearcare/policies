@@ -15,7 +15,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ## 9.2 Configuration Management Policies
 
-1. Chef and userdata are used to standardize and automate configuration management.
+1. Chef, SSM, and userdata shell/powershell scripts are used to standardize and automate configuration management.
 2. No systems are deployed into Cloudticity environments without approval of the Cloudticity CTO.
 3. All changes to production systems, network devices, and firewalls are approved by the Cloudticity CTO before they are implemented to assure they comply with business and security requirements.
 4. All changes to production systems are tested before they are implemented in production.
@@ -54,7 +54,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ### 9.3.1 Provisioning Linux Systems
 
-1. Linux systems have their baseline security configuration applied via userdata shell scripts or chef. These baseline states cover:
+1. Linux systems have their baseline security configuration applied via userdata shell scripts, SSM, or Chef. These baseline states cover:
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
    * Installing and configuring the TMDS agent.
@@ -64,7 +64,7 @@ Cloudticity standardizes and automates configuration management through the use 
 
 ### 9.3.2 Provisioning Windows Systems
 
-1. Windows systems have their baseline security configuration applied via userdata powershell scripts or Chef recipes. These baseline settings cover:
+1. Windows systems have their baseline security configuration applied via userdata powershell scripts, SSM, or Chef. These baseline settings cover:
    * Ensuring that the machine is up-to-date with security patches and is configured to apply patches in accordance with our policies.
    * Stopping and disabling any unnecessary OS services.
    * Installing and configuring the TMDS agent.
