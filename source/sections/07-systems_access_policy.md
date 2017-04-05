@@ -107,8 +107,9 @@ Access to Cloudticity systems and applications is limited for all users, includi
 ## 7.7 Automatic Logoff
 
 1. Users are required to make information systems inaccessible by any other individual when unattended by the users (ex. by using a password protected screen saver or logging off the system).
-2. Information systems automatically log users off the systems after 15 minutes of inactivity.
-3. The Security Officer pre-approves exceptions to automatic log off requirements.
+2. Workstations and devices automatically blank the screen after 2 minutes of inactivity.
+3. Information systems automatically log users off the systems after 30 minutes of inactivity.
+4. The Security Officer pre-approves exceptions to automatic log off requirements.
 
 ## 7.8 Employee Workstation Use
 
