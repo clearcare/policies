@@ -4,6 +4,7 @@ Cloudticity utilizes a suite of approved software tools for internal use by work
 
 ## 20.1 List of Approved Tools
 
+* **AWS**: AWS provides resources and services used for hosting HIPAA compliant solutions.
 * **Chef**: Chef is used for automated configuration management and deployments.
 * **Cloudcheckr**: Cloudcheckr is used for AWS account management around improving security, cost, availability, and utilization.
 * **Github**: Github is a tool built on top of Git, the version control platform. It is utilized for storage of configuration scripts and other infrastructure automation tools, as well as for source and version control of application code used by Cloudticity.
