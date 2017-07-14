@@ -21,7 +21,7 @@ Cloudticity standardizes and automates configuration management through the use 
 4. All changes to production systems are tested before they are implemented in production.
 5. Implementation of approved changes are only performed by authorized personnel.
 6. Tooling to generate an up-to-date inventory of systems is located in Cloudcheckr.
-   * All systems are labelled using tags to differentiate resources based on criticality.
+   * All systems are labelled using tags to differentiate resources based on criticality and sensitivity.
    * Cloudcheckr is used to generate the inventory lists and asset lists required by the Risk Assessment phase of Cloudticity's Risk Management procedures ([§4.3.1](04-risk_management_policy.md#431-risk-assessment)).
 7. All frontend functionality (developer dashboards and portals) is separated from backend (database and app servers) systems by being deployed on separate servers or containers.
 8. All software and systems are tested using unit tests and end to end tests.
