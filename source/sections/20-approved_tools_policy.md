@@ -2,7 +2,7 @@
 
 Cloudticity utilizes a suite of approved software tools for internal use by workforce members. These software tools are either self-hosted, with security managed by Cloudticity, or they are hosted by a subcontractor with appropriate business associate agreements in place to preserve data integrity. Use of other tools requires approval from Cloudticity leadership.
 
-## 20.1 List of Approved Tools
+## 20.1 List of Approved Applications
 
 * **AWS**: AWS provides resources and services used for hosting HIPAA compliant solutions.
 * **Chef**: Chef is used for automated configuration management and deployments.
@@ -21,3 +21,18 @@ Cloudticity utilizes a suite of approved software tools for internal use by work
 * **Trend Micro**: Trend Micro Deep Security is used for security of AWS resources and Trend Micro Worry-Free Business Support is used for endpoint security.
 * **Uberconference**: Uberconference is used for conferencing and screen sharing.
 * **Zendesk**: Zendesk is used for ticket management and to provide workflows for incident and problem management.
+
+## 20.2 List of Approved Application Stores
+* **Amazon Appstore**: The official Amazon app store for Android, Kindle Fire, and Blackberry.
+* **App Store**: The official Apple store for iPhone, iPad, and Mac products.
+* **Google Play**: The official Google store for Android.
+* **Manufacturer-specific App Stores**: Examples of these are Samsung Apps, LG Smart World, and Lenovo App Store.
+
+## 20.3 List of Approved Application Extensions and Plugins
+* **Adblock Plus**: Google Chrome addon for blocking popup ads.
+* **UberConference**: Google Chrome addon for participating in Uberconference.
+* **UberConference Screen Sharing**: Google Chrome addon for participating in Uberconference screen sharing.
+* **Cisco Webex Extension**: Google Chrome addon for participating in Webex conferences.
+* **Google Docs (including Offline)**: Google Chrome addon for using Google Docs.
+* **Google Sheets**: Google Chrome addon for using Google Sheets.
+* **Postman - REST Client**: Google Chrome addon for utilizing Postman for REST endpoint testing.
