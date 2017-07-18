@@ -20,7 +20,7 @@ Cloudticity was born in the cloud, and has never been saddled with physical infr
 
 ## 10.2 Cloudticity-controlled Facility Access Policies
 
-1. With no physical offices, visitors and third party support access is unnecessary. If a physical location is obtained, visitor and third-party support access will be recorded and supervised unless previously approved.
+1. With no physical offices, visitors and third party support access is unnecessary. If a physical location is obtained, visitor and third-party support access will be recorded and supervised unless previously approved. Cloudticity employees that require a business visit involving covered information must obtain permission from the Security Officer prior to the visit.
 2. With no physical offices, repairs and their documentation are unnecessary. If a physical location is obtained, repairs or modifications to the physical components of the facility which are related to security (e.g., hardware, walls, doors and locks) will be  documented and retained in accordance with the retention policy.
 3. Within our homes, fire extinguishers and detectors are installed according to applicable laws and regulations.
 4. With no physical offices, maintenance and its documentation is unnecessary. If a physical location is obtained, maintenance and service will be controlled and conducted by authorized personnel in accordance with supplier-recommended intervals, insurance policies, and the organizations future maintenance program, taking into account whether this maintenance is performed by personnel on site or external to the organization.
